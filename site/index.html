@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-page="home">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MirageDevo — AI automation &amp; websites</title>
+<meta name="description" content="I build the work you keep doing by hand. AI automation systems and custom websites for clinics, salons, industrial and D2C businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div data-md-root="1" style="background:#0b1120; color:#ece6da; font-family:Geist, system-ui, sans-serif; position:relative;">
+
+  <div data-cursor="1" style="position:fixed; top:0; left:0; z-index:300; width:34px; height:34px; margin:-17px 0 0 -17px; border:1px solid rgba(204,242,77,0.55); border-radius:50%; pointer-events:none; opacity:0; display:flex; align-items:center; justify-content:center; transition:width 420ms cubic-bezier(.16,1,.3,1), height 420ms cubic-bezier(.16,1,.3,1), background 420ms ease, opacity 300ms ease;">
+    <span data-cursor-label="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:9px; letter-spacing:0.12em; text-transform:uppercase; color:#0b1120; opacity:0; white-space:nowrap;"></span>
+  </div>
+
+  <div data-splash="1" style="position:fixed; inset:0; z-index:200; pointer-events:none;">
+    <div data-panel-top="1" style="position:absolute; left:0; right:0; top:0; height:50.2%; background:#0b1120; will-change:transform;"></div>
+    <div data-panel-bot="1" style="position:absolute; left:0; right:0; bottom:0; height:50.2%; background:#0b1120; will-change:transform;"></div>
+
+    <div data-splash-overlay="1" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:clamp(24px,4vw,56px);">
+      <div style="position:absolute; top:clamp(24px,4vw,56px); left:clamp(24px,4vw,56px); right:clamp(24px,4vw,56px); display:flex; justify-content:space-between; gap:20px; font-family:'Geist Mono', ui-monospace, monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.4);">
+        <span data-splash-fade="1">MirageDevo</span>
+        <span data-splash-fade="1">Est. 2024 &#183; IST</span>
+      </div>
+
+      <div data-splash-word="1" style="display:flex; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(38px,7.5vw,120px); line-height:1; letter-spacing:-0.025em;">
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">M</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">i</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">r</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">a</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">g</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">e</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" data-accent-fg="1" style="display:inline-block; color:#ccf24d;">D</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" data-accent-fg="1" style="display:inline-block; color:#ccf24d;">e</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" data-accent-fg="1" style="display:inline-block; color:#ccf24d;">v</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" data-accent-fg="1" style="display:inline-block; color:#ccf24d;">o</span></span>
+      </div>
+
+      <div style="position:absolute; bottom:clamp(24px,4vw,56px); left:clamp(24px,4vw,56px); display:flex; align-items:flex-end; gap:14px;">
+        <span data-splash-pct="1" style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(56px,11vw,180px); line-height:0.86; letter-spacing:-0.04em; color:rgba(236,230,218,0.92);">000</span>
+        <span data-splash-fade="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.4); padding-bottom:0.9em;">Loading</span>
+      </div>
+
+      <div style="position:absolute; bottom:clamp(24px,4vw,56px); right:clamp(24px,4vw,56px); width:min(240px,34vw); height:1px; background:rgba(236,230,218,0.16); overflow:hidden;">
+        <div data-splash-fill="1" data-accent-bg="1" style="position:absolute; inset:0; background:#ccf24d; transform:scaleX(0); transform-origin:left center;"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <header data-nav="1" style="position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:22px clamp(20px,4vw,56px); border-bottom:1px solid transparent;">
+    <a href="#top" style="font-family:'Instrument Serif', Georgia, serif; font-size:22px; letter-spacing:-0.01em;">Mirage<span data-accent-fg="1" style="color:#ccf24d;">Devo</span></a>
+    <nav style="display:flex; align-items:center; flex-wrap:nowrap; gap:clamp(12px,2vw,34px); font-size:13.5px;">
+      <a href="ai-automation.html" style="display:inline-block; white-space:nowrap; color:rgba(236,230,218,0.72); transition:color 260ms ease;">AI Automation</a>
+      <a href="#work" style="display:inline-block; white-space:nowrap; color:rgba(236,230,218,0.72); transition:color 260ms ease;">Work</a>
+      <a href="#websites" style="display:inline-block; white-space:nowrap; color:rgba(236,230,218,0.72); transition:color 260ms ease;">Websites</a>
+      <a href="#notes" style="display:inline-block; white-space:nowrap; color:rgba(236,230,218,0.72); transition:color 260ms ease;">Notes</a>
+      <a href="#contact" data-accent-border="1" style="display:inline-block; white-space:nowrap; border:1px solid #ccf24d; border-radius:999px; padding:9px 18px; font-size:13px; line-height:1.2; transition:background 260ms ease, color 260ms ease;">Book a call</a>
+    </nav>
+  </header>
+
+  <section id="top" data-screen-label="Hero" data-cursor-label="drag" style="position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:flex-end; padding:140px clamp(20px,4vw,56px) clamp(36px,5vh,64px); overflow:hidden;">
+    <canvas data-hero-canvas="1" style="position:absolute; inset:0; width:100%; height:100%; display:block; opacity:0.9;"></canvas>
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 70% 20%, rgba(204,242,77,0.1), rgba(11,17,32,0) 55%), linear-gradient(180deg, rgba(11,17,32,0.2) 0%, rgba(11,17,32,0.55) 55%, rgba(11,17,32,0.94) 100%); pointer-events:none;"></div>
+
+    <div style="position:relative; display:flex; flex-direction:column; gap:clamp(28px,5vh,56px);">
+      <h1 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(44px,8.6vw,160px); line-height:0.94; letter-spacing:-0.035em;">
+        <span data-split="1" style="display:block;">I build the work</span>
+        <span data-split="1" style="display:block;">you keep doing by hand.</span>
+      </h1>
+
+      <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:32px; border-top:1px solid rgba(236,230,218,0.14); padding-top:26px;">
+        <p data-reveal="1" style="margin:0; max-width:40ch; font-size:clamp(15px,1.25vw,19px); line-height:1.55; color:rgba(236,230,218,0.7); text-wrap:pretty;">I'm a developer working on my own, building AI automation systems and custom websites. Right now most of my time goes into a WhatsApp booking agent for clinics and salons.</p>
+        <div data-reveal="1" style="display:flex; align-items:center; gap:18px;">
+          <a href="#work" data-accent-bg="1" style="display:inline-block; background:#ccf24d; color:#0b1120; border-radius:999px; padding:15px 28px; font-size:14px; font-weight:500;">See what I've built</a>
+          <a href="#contact" style="display:inline-block; font-size:14px; color:rgba(236,230,218,0.72); border-bottom:1px solid rgba(236,230,218,0.25); padding-bottom:3px;">Work with me</a>
+        </div>
+        <div data-reveal="1" style="display:flex; flex-direction:column; gap:6px; font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.42);">
+          <span>Scroll</span>
+          <span data-scroll-arrow="1" style="font-size:14px; transition:opacity 600ms ease;">&#8595;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Capability marquee" style="border-top:1px solid rgba(236,230,218,0.12); border-bottom:1px solid rgba(236,230,218,0.12); padding:22px 0; overflow:hidden;">
+    <div data-marquee="1" style="display:flex; width:max-content; animation:md-marquee 34s linear infinite;">
+      <div style="display:flex; align-items:center; gap:clamp(28px,4vw,64px); padding-right:clamp(28px,4vw,64px); font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">
+        <span>Lead qualification</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Support automation</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Booking systems</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Next.js builds</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Reporting pipelines</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Agency white-label</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:clamp(28px,4vw,64px); padding-right:clamp(28px,4vw,64px); font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">
+        <span>Lead qualification</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Support automation</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Booking systems</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Next.js builds</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Reporting pipelines</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Agency white-label</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Proof strip" style="border-bottom:1px solid rgba(236,230,218,0.12); padding:clamp(48px,7vh,88px) clamp(20px,4vw,56px);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:clamp(28px,4vw,64px);">
+      <div data-reveal="1" style="display:flex; flex-direction:column; gap:10px;">
+        <div style="display:flex; align-items:baseline; gap:4px; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(44px,5.5vw,86px); line-height:1; letter-spacing:-0.03em;"><span data-scramble="400">400</span><span data-accent-fg="1" style="color:#ccf24d;">+</span></div>
+        <div style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Hours saved / month</div>
+      </div>
+      <div data-reveal="1" style="display:flex; flex-direction:column; gap:10px;">
+        <div style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(44px,5.5vw,86px); line-height:1; letter-spacing:-0.03em;"><span data-scramble="12">12</span></div>
+        <div style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Projects shipped</div>
+      </div>
+      <div data-reveal="1" style="display:flex; flex-direction:column; gap:10px;">
+        <div style="display:flex; align-items:baseline; gap:6px; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(44px,5.5vw,86px); line-height:1; letter-spacing:-0.03em;"><span data-scramble="3">3</span><span style="font-size:0.45em; color:rgba(236,230,218,0.55);">&#8211;4 wks</span></div>
+        <div style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Average turnaround</div>
+      </div>
+      <div data-reveal="1" style="display:flex; flex-direction:column; gap:10px;">
+        <div style="display:flex; align-items:baseline; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(44px,5.5vw,86px); line-height:1; letter-spacing:-0.03em;"><span style="color:rgba(236,230,218,0.55); font-size:0.5em; margin-right:2px;">$</span><span data-scramble="180">180</span><span>K</span></div>
+        <div style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Client revenue influenced</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" data-screen-label="Case studies" data-pin="1" data-cursor-label="scroll" style="position:relative; height:620vh;">
+    <div style="position:sticky; top:0; height:100vh; overflow:hidden; display:flex; flex-direction:column;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:24px; padding:clamp(28px,5vh,56px) clamp(20px,4vw,56px) 0;">
+        <h2 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(30px,3.6vw,60px); line-height:1; letter-spacing:-0.03em;">Selected work</h2>
+        <div style="display:flex; align-items:center; gap:16px; font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">
+          <span data-pin-index="1">01</span>
+          <span style="width:clamp(60px,14vw,180px); height:1px; background:rgba(236,230,218,0.18); position:relative; overflow:hidden;"><span data-pin-progress="1" data-accent-bg="1" style="position:absolute; inset:0; background:#ccf24d; transform:scaleX(0); transform-origin:left center;"></span></span>
+          <span>06</span>
+        </div>
+      </div>
+      <div style="flex:1; min-height:0; display:flex; align-items:center;">
+        <div data-pin-track="1" style="display:flex; gap:clamp(20px,2.5vw,40px); padding:0 clamp(20px,4vw,56px); will-change:transform;">
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/turbotech.jpg" alt="Turbo Tech industrial engineering website" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">01 &#183; Industrial engineering &#183; Kushinagar</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">Turbo Tech</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Full site &#183; video hero</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">EPC, fabrication and manpower services across seven sections, with a quote funnel front and centre.</span>
+              </div>
+            </div>
+          </article>
+
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/aesthetics.jpg" alt="Aesthetics by Jaylaxmi House home textiles website" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">02 &#183; Home textiles retail &#183; Vadodara</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">Aesthetics</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Brand site &#183; AI customiser</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">A 1972 curtain and upholstery house given an editorial site, plus a tool that visualises fabric in a room.</span>
+              </div>
+            </div>
+          </article>
+
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/fooda.jpg" alt="FOODA B2B food industry platform" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">03 &#183; B2B marketplace</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">FOODA</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Platform &#183; supplier search</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">Supplier discovery, product catalogues and a barcode scanner, built for food businesses buying direct.</span>
+              </div>
+            </div>
+          </article>
+
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/siren.jpg" alt="SIREN jewellery ecommerce site" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">04 &#183; Direct-to-consumer</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">SIR&Egrave;N</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Storefront &#183; pre-launch capture</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">Four collections framed as temperatures, with a waitlist gate that collects intent before orders open.</span>
+              </div>
+            </div>
+          </article>
+
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/bookmynail.jpg" alt="BookMyNail at-home nail studio booking site" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">05 &#183; At-home salon &#183; Ahmedabad</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">BookMyNail</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Booking flow &#183; priced menu</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">Service, date and area captured in the hero itself, so a booking starts before the first scroll.</span>
+              </div>
+            </div>
+          </article>
+
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/monicasingh.jpg" alt="Monica Singh anchor and emcee portfolio site" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">06 &#183; Personal brand &#183; Ahmedabad</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">Monica Singh</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Portfolio &#183; showreel &#183; enquiry</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">An anchor's showreel, gallery and reviews arranged so event enquiries land in one click.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div style="padding:0 clamp(20px,4vw,56px) clamp(20px,3vh,36px); font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.35);">Six of twelve projects shipped &#183; more on request</div>
+    </div>
+  </section>
+
+  <section id="system" data-screen-label="Workflow diagram" data-diagram-section="1" style="position:relative; height:320vh; border-top:1px solid rgba(236,230,218,0.12);">
+    <div style="position:sticky; top:0; height:100vh; display:flex; flex-direction:column; justify-content:center; gap:clamp(24px,5vh,52px); padding:clamp(80px,12vh,140px) clamp(20px,4vw,56px) clamp(32px,6vh,72px); overflow:hidden;">
+      <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px;">
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Anatomy of a build</span>
+          <h2 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(30px,4.4vw,74px); line-height:1; letter-spacing:-0.03em; max-width:22ch;">One system, five moving parts.</h2>
+        </div>
+        <p data-diagram-caption="1" style="margin:0; max-width:34ch; font-size:15px; line-height:1.6; color:rgba(236,230,218,0.6);">A lead arrives at 11pm. By morning it has been scored, routed, answered and booked, with a record you can audit.</p>
+      </div>
+
+      <svg data-diagram="1" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet" style="width:100%; height:auto; max-height:46vh; overflow:visible;">
+        <path data-dline="1" d="M150 150 H330" stroke="rgba(236,230,218,0.35)" stroke-width="1.5" fill="none"></path>
+        <path data-dline="1" d="M450 150 H630" stroke="rgba(236,230,218,0.35)" stroke-width="1.5" fill="none"></path>
+        <path data-dline="1" d="M750 150 H930" stroke="rgba(236,230,218,0.35)" stroke-width="1.5" fill="none"></path>
+        <path data-dline="1" d="M600 190 V262 H1050 V190" stroke="rgba(236,230,218,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4 6"></path>
+        <g data-dnode="1">
+          <rect x="30" y="110" width="120" height="80" rx="4" fill="#111a2c" stroke="rgba(236,230,218,0.22)"></rect>
+          <text x="90" y="146" text-anchor="middle" fill="rgba(236,230,218,0.85)" font-family="Geist, sans-serif" font-size="15">Intake</text>
+          <text x="90" y="166" text-anchor="middle" fill="rgba(236,230,218,0.45)" font-family="Geist Mono, monospace" font-size="10" letter-spacing="1.4">FORM &#183; CALL &#183; DM</text>
+        </g>
+        <g data-dnode="1">
+          <rect x="330" y="110" width="120" height="80" rx="4" fill="#111a2c" stroke="rgba(236,230,218,0.22)"></rect>
+          <text x="390" y="146" text-anchor="middle" fill="rgba(236,230,218,0.85)" font-family="Geist, sans-serif" font-size="15">Qualify</text>
+          <text x="390" y="166" text-anchor="middle" fill="rgba(236,230,218,0.45)" font-family="Geist Mono, monospace" font-size="10" letter-spacing="1.4">SCORE &#183; TAG</text>
+        </g>
+        <g data-dnode="1">
+          <rect x="630" y="110" width="120" height="80" rx="4" fill="#111a2c" stroke="rgba(236,230,218,0.22)"></rect>
+          <text x="690" y="146" text-anchor="middle" fill="rgba(236,230,218,0.85)" font-family="Geist, sans-serif" font-size="15">Respond</text>
+          <text x="690" y="166" text-anchor="middle" fill="rgba(236,230,218,0.45)" font-family="Geist Mono, monospace" font-size="10" letter-spacing="1.4">REPLY &#183; ROUTE</text>
+        </g>
+        <g data-dnode="1">
+          <rect x="930" y="110" width="120" height="80" rx="4" fill="#111a2c" stroke="rgba(236,230,218,0.22)"></rect>
+          <text x="990" y="146" text-anchor="middle" fill="rgba(236,230,218,0.85)" font-family="Geist, sans-serif" font-size="15">Book</text>
+          <text x="990" y="166" text-anchor="middle" fill="rgba(236,230,218,0.45)" font-family="Geist Mono, monospace" font-size="10" letter-spacing="1.4">CALENDAR</text>
+        </g>
+        <g data-dnode="1">
+          <rect x="510" y="228" width="180" height="66" rx="4" fill="#0b1120" stroke="rgba(204,242,77,0.5)" data-accent-stroke="1"></rect>
+          <text x="600" y="256" text-anchor="middle" fill="#ccf24d" data-accent-svg-fg="1" font-family="Geist, sans-serif" font-size="14">Audit log</text>
+          <text x="600" y="276" text-anchor="middle" fill="rgba(236,230,218,0.45)" font-family="Geist Mono, monospace" font-size="10" letter-spacing="1.4">EVERY STEP RECORDED</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section id="automation" data-screen-label="AI automation teaser" style="position:relative; padding:clamp(80px,14vh,180px) clamp(20px,4vw,56px); border-top:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+    <div data-parallax="0.12" style="position:absolute; left:50%; top:50%; width:70vw; height:70vw; margin:-35vw 0 0 -35vw; border-radius:50%; background:radial-gradient(circle at center, rgba(204,242,77,0.08), rgba(204,242,77,0) 60%); pointer-events:none;"></div>
+    <div style="position:relative; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:clamp(32px,5vw,80px); align-items:end;">
+      <div style="display:flex; flex-direction:column; gap:26px;">
+        <span data-reveal="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Track A &#183; AI automation</span>
+        <h2 data-split="1" style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(34px,5.4vw,92px); line-height:0.98; letter-spacing:-0.03em; max-width:20ch;">Your business runs on repetition.</h2>
+        <p data-reveal="1" style="margin:0; max-width:46ch; font-size:clamp(15px,1.2vw,18px); line-height:1.6; color:rgba(236,230,218,0.68); text-wrap:pretty;">Intake, follow-up, scheduling, reporting. I map the work you repeat every week, then build the system that does it without you.</p>
+        <a data-reveal="1" data-magnetic="1" href="#automation" style="align-self:flex-start; display:inline-flex; align-items:center; gap:10px; font-size:14px; border-bottom:1px solid rgba(236,230,218,0.25); padding-bottom:4px;">See how it works <span data-accent-fg="1" style="color:#ccf24d;">&#8594;</span></a>
+      </div>
+      <div style="display:flex; flex-direction:column;">
+        <div data-reveal="1" data-row="1" style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:22px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.5vw,22px);">Lead qualification</span>
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Clinics &#183; D2C</span>
+        </div>
+        <div data-reveal="1" data-row="1" style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:22px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.5vw,22px);">Support automation</span>
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Industrial</span>
+        </div>
+        <div data-reveal="1" data-row="1" style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:22px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.5vw,22px);">Booking &amp; reminders</span>
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Clinics</span>
+        </div>
+        <div data-reveal="1" data-row="1" style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:22px 0; border-top:1px solid rgba(236,230,218,0.14); border-bottom:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.5vw,22px);">Reporting &amp; handoff</span>
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(236,230,218,0.45);">All</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="websites" data-screen-label="Services split" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); border-top:1px solid rgba(236,230,218,0.12);">
+    <div data-reveal="1" style="padding:clamp(40px,7vh,88px) clamp(24px,3.5vw,56px); display:flex; flex-direction:column; gap:18px; border-right:1px solid rgba(236,230,218,0.12);">
+      <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.45);">01</span>
+      <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.4vw,54px); line-height:1.02; letter-spacing:-0.025em;">AI Automation</h3>
+      <p style="margin:0; max-width:40ch; font-size:15.5px; line-height:1.6; color:rgba(236,230,218,0.65);">Custom workflow systems built around how your team actually works. Scoped, built, documented, handed over.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;">
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Workflow mapping</span>
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Integrations</span>
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Agent build</span>
+      </div>
+    </div>
+    <div data-reveal="1" style="padding:clamp(40px,7vh,88px) clamp(24px,3.5vw,56px); display:flex; flex-direction:column; gap:18px;">
+      <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.45);">02</span>
+      <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.4vw,54px); line-height:1.02; letter-spacing:-0.025em;">Websites</h3>
+      <p style="margin:0; max-width:40ch; font-size:15.5px; line-height:1.6; color:rgba(236,230,218,0.65);">Custom-coded sites that load fast and read expensive. No templates, no page-builder tells.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;">
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Design</span>
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Next.js build</span>
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Motion</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" data-screen-label="Process" style="background:#ece6da; color:#14161a; padding:clamp(64px,10vh,140px) clamp(20px,4vw,56px);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(32px,5vw,80px); align-items:start;">
+      <div style="position:sticky; top:120px; display:flex; flex-direction:column; gap:18px;">
+        <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(20,22,26,0.5);">How it goes</span>
+        <h2 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(32px,4.6vw,76px); line-height:0.98; letter-spacing:-0.03em; max-width:16ch;">Four steps, no mystery.</h2>
+        <div style="display:flex; align-items:baseline; gap:12px; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(60px,9vw,150px); line-height:1; letter-spacing:-0.04em;">
+          <span data-step-index="1">01</span>
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(20,22,26,0.45);">/ 04</span>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:0;">
+        <div data-step="1" style="padding:clamp(24px,4vh,44px) 0; border-top:1px solid rgba(20,22,26,0.16); display:flex; flex-direction:column; gap:10px;">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(20,22,26,0.5);">Step 01</span>
+          <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,2.8vw,42px); line-height:1.05; letter-spacing:-0.02em;">Diagnose</h3>
+          <p style="margin:0; max-width:48ch; font-size:15.5px; line-height:1.6; color:rgba(20,22,26,0.68);">A working session on where the hours actually go. You leave with a written list of what is worth automating and what is not.</p>
+        </div>
+        <div data-step="1" style="padding:clamp(24px,4vh,44px) 0; border-top:1px solid rgba(20,22,26,0.16); display:flex; flex-direction:column; gap:10px;">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(20,22,26,0.5);">Step 02</span>
+          <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,2.8vw,42px); line-height:1.05; letter-spacing:-0.02em;">Map</h3>
+          <p style="margin:0; max-width:48ch; font-size:15.5px; line-height:1.6; color:rgba(20,22,26,0.68);">A single-page system diagram and a fixed scope. Priced before anything gets built, so there are no moving numbers.</p>
+        </div>
+        <div data-step="1" style="padding:clamp(24px,4vh,44px) 0; border-top:1px solid rgba(20,22,26,0.16); display:flex; flex-direction:column; gap:10px;">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(20,22,26,0.5);">Step 03</span>
+          <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,2.8vw,42px); line-height:1.05; letter-spacing:-0.02em;">Build</h3>
+          <p style="margin:0; max-width:48ch; font-size:15.5px; line-height:1.6; color:rgba(20,22,26,0.68);">Three to four weeks, with something to look at every week. You approve as it goes rather than at the end.</p>
+        </div>
+        <div data-step="1" style="padding:clamp(24px,4vh,44px) 0; border-top:1px solid rgba(20,22,26,0.16); border-bottom:1px solid rgba(20,22,26,0.16); display:flex; flex-direction:column; gap:10px;">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(20,22,26,0.5);">Step 04</span>
+          <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,2.8vw,42px); line-height:1.05; letter-spacing:-0.02em;">Hand over</h3>
+          <p style="margin:0; max-width:48ch; font-size:15.5px; line-height:1.6; color:rgba(20,22,26,0.68);">Documentation, a walkthrough recording, and thirty days of support. The system is yours, not rented.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Testimonials" style="padding:clamp(72px,12vh,160px) clamp(20px,4vw,56px); border-bottom:1px solid rgba(236,230,218,0.12);">
+    <div style="display:flex; flex-direction:column; gap:clamp(32px,6vh,64px);">
+      <span data-reveal="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">What clients say</span>
+      <div data-quotes="1" style="position:relative; min-height:clamp(220px,34vh,320px);">
+        <figure data-quote="1" style="margin:0; position:absolute; inset:0; display:flex; flex-direction:column; justify-content:space-between; gap:28px;">
+          <blockquote style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,3.6vw,60px); line-height:1.1; letter-spacing:-0.025em; max-width:26ch; text-wrap:pretty;">He rebuilt the intake in a fortnight and my front desk got its mornings back.</blockquote>
+          <figcaption style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Placeholder attribution &#183; RDCC</figcaption>
+        </figure>
+        <figure data-quote="1" style="margin:0; position:absolute; inset:0; display:flex; flex-direction:column; justify-content:space-between; gap:28px;">
+          <blockquote style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,3.6vw,60px); line-height:1.1; letter-spacing:-0.025em; max-width:26ch; text-wrap:pretty;">The site finally looks like the company we tell people we are.</blockquote>
+          <figcaption style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Placeholder attribution &#183; Marca</figcaption>
+        </figure>
+        <figure data-quote="1" style="margin:0; position:absolute; inset:0; display:flex; flex-direction:column; justify-content:space-between; gap:28px;">
+          <blockquote style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,3.6vw,60px); line-height:1.1; letter-spacing:-0.025em; max-width:26ch; text-wrap:pretty;">We brief him like an in-house dev and he ships like one. That is rare for white-label.</blockquote>
+          <figcaption style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Placeholder attribution &#183; agency partner</figcaption>
+        </figure>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <button data-quote-dot="1" type="button" style="width:34px; height:2px; border:0; padding:0; background:rgba(236,230,218,0.25); cursor:pointer;"></button>
+        <button data-quote-dot="1" type="button" style="width:34px; height:2px; border:0; padding:0; background:rgba(236,230,218,0.25); cursor:pointer;"></button>
+        <button data-quote-dot="1" type="button" style="width:34px; height:2px; border:0; padding:0; background:rgba(236,230,218,0.25); cursor:pointer;"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" data-screen-label="Pricing philosophy" style="padding:clamp(72px,12vh,160px) clamp(20px,4vw,56px); border-bottom:1px solid rgba(236,230,218,0.12);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(32px,5vw,80px);">
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <span data-reveal="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">How pricing works</span>
+        <h2 data-split="1" style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(30px,4.4vw,74px); line-height:1; letter-spacing:-0.03em; max-width:18ch;">Ranges up front, fixed before we start.</h2>
+        <p data-reveal="1" style="margin:0; max-width:44ch; font-size:15.5px; line-height:1.6; color:rgba(236,230,218,0.65);">Every project gets a written scope and one number. If the scope grows, we price the change before it happens.</p>
+      </div>
+      <div style="display:flex; flex-direction:column;">
+        <div data-reveal="1" style="display:flex; align-items:baseline; gap:18px; padding:24px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.4vw,21px);">Single automation</span>
+        </div>
+        <div data-reveal="1" style="display:flex; align-items:baseline; gap:18px; padding:24px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.4vw,21px);">Multi-step system</span>
+        </div>
+        <div data-reveal="1" style="display:flex; align-items:baseline; gap:18px; padding:24px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.4vw,21px);">Website, design &amp; build</span>
+        </div>
+        <div data-reveal="1" style="display:flex; align-items:baseline; gap:18px; padding:24px 0; border-top:1px solid rgba(236,230,218,0.14); border-bottom:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.4vw,21px);">Agency white-label</span>
+        </div>
+        <a data-reveal="1" href="ai-automation.html" data-accent-border="1" style="align-self:flex-start; margin-top:26px; display:inline-block; border:1px solid #ccf24d; border-radius:999px; padding:14px 26px; font-size:14px; transition:background 260ms ease, color 260ms ease;">Know more</a>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Stack and availability" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); border-bottom:1px solid rgba(236,230,218,0.12);">
+    <div data-reveal="1" style="padding:clamp(40px,7vh,80px) clamp(24px,3.5vw,56px); display:flex; flex-direction:column; gap:22px; border-right:1px solid rgba(236,230,218,0.12);">
+      <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Built with</span>
+      <div style="display:flex; flex-wrap:wrap; gap:10px;">
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">Next.js</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">Tailwind</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">GSAP</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">Lenis</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">Vercel</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">Supabase</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">n8n</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">OpenAI &amp; Claude APIs</span>
+      </div>
+    </div>
+    <div data-reveal="1" style="padding:clamp(40px,7vh,80px) clamp(24px,3.5vw,56px); display:flex; flex-direction:column; gap:20px;">
+      <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Availability</span>
+      <div style="display:flex; align-items:center; gap:12px; font-size:clamp(18px,1.8vw,26px);">
+        <span data-accent-bg="1" style="width:8px; height:8px; border-radius:50%; background:#ccf24d; animation:md-pulse 2.6s ease-in-out infinite;"></span>
+        <span>Two project slots open for October</span>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px; font-size:14.5px; color:rgba(236,230,218,0.62);">
+        <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px solid rgba(236,230,218,0.12); padding-top:12px;"><span>Timezone</span><span data-clock="1" style="font-family:'Geist Mono', ui-monospace, monospace;">IST &#183; UTC+5:30</span></div>
+        <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px solid rgba(236,230,218,0.12); padding-top:12px;"><span>Reply time</span><span style="font-family:'Geist Mono', ui-monospace, monospace;">Under 12 hours</span></div>
+        <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px solid rgba(236,230,218,0.12); padding-top:12px;"><span>Working with</span><span style="font-family:'Geist Mono', ui-monospace, monospace;">Clinics, industrial, D2C, agencies</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="notes" data-screen-label="Notes teaser" style="padding:clamp(72px,12vh,150px) clamp(20px,4vw,56px);">
+    <div style="display:flex; flex-direction:column; gap:clamp(28px,5vh,52px);">
+      <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px;">
+        <h2 data-reveal="1" style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(30px,4.2vw,68px); line-height:1; letter-spacing:-0.03em;">Notes</h2>
+        <a data-reveal="1" data-magnetic="1" href="#notes" style="font-size:14px; color:rgba(236,230,218,0.7); border-bottom:1px solid rgba(236,230,218,0.25); padding-bottom:3px;">All writing</a>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:clamp(20px,3vw,48px);">
+        <a data-reveal="1" href="#notes" data-magnetic="1" style="display:flex; flex-direction:column; gap:14px; padding-top:20px; border-top:1px solid rgba(236,230,218,0.16);">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Automation &#183; 6 min</span>
+          <span style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(20px,2vw,30px); line-height:1.15;">The three workflows every clinic should automate first</span>
+        </a>
+        <a data-reveal="1" href="#notes" data-magnetic="1" style="display:flex; flex-direction:column; gap:14px; padding-top:20px; border-top:1px solid rgba(236,230,218,0.16);">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Web &#183; 4 min</span>
+          <span style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(20px,2vw,30px); line-height:1.15;">Why your site being fast is a sales argument</span>
+        </a>
+        <a data-reveal="1" href="#notes" data-magnetic="1" style="display:flex; flex-direction:column; gap:14px; padding-top:20px; border-top:1px solid rgba(236,230,218,0.16);">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Process &#183; 5 min</span>
+          <span style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(20px,2vw,30px); line-height:1.15;">What I ask before quoting an automation project</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-screen-label="Footer CTA" style="padding:clamp(80px,16vh,200px) clamp(20px,4vw,56px) clamp(32px,5vh,56px); display:flex; flex-direction:column; gap:clamp(48px,9vh,120px); border-top:1px solid rgba(236,230,218,0.12);">
+    <div style="display:flex; flex-direction:column; gap:clamp(28px,4vh,44px);">
+      <h2 data-split="1" style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(40px,8.5vw,150px); line-height:0.94; letter-spacing:-0.035em; max-width:18ch;">Tell me what you keep doing by hand.</h2>
+      <div data-reveal="1" style="display:flex; flex-wrap:wrap; align-items:center; gap:20px;">
+        <a href="#contact" data-magnetic="1" data-accent-bg="1" style="background:#ccf24d; color:#0b1120; border-radius:999px; padding:16px 30px; font-size:14.5px; font-weight:500;">Book a 20-minute call</a>
+        <a href="mailto:hello@miragedevo.com" data-magnetic="1" style="font-size:14.5px; color:rgba(236,230,218,0.72); border-bottom:1px solid rgba(236,230,218,0.25); padding-bottom:3px;">hello@miragedevo.com</a>
+      </div>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:24px; border-top:1px solid rgba(236,230,218,0.12); padding-top:24px; font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.42);">
+      <span>MirageDevo &#183; 2026</span>
+      <div style="display:flex; gap:20px;">
+        <a href="#automation" style="color:rgba(236,230,218,0.42);">AI Automation</a>
+        <a href="#websites" style="color:rgba(236,230,218,0.42);">Websites</a>
+        <a href="#work" style="color:rgba(236,230,218,0.42);">Work</a>
+        <a href="#notes" style="color:rgba(236,230,218,0.42);">Notes</a>
+      </div>
+      <span>Agency partnerships by referral</span>
+    </div>
+  </section>
+</div>
+
+<script src="assets/js/home.js" defer></script>
+</body>
+</html>

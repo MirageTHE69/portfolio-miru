@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { background: #0b1120; }
+  body { margin: 0; background: #0b1120; color: #ece6da; font-family: Geist, system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: #ece6da; text-decoration: none; }
+  a:hover { color: #ccf24d; }
+  [data-nav] nav a:hover { color: #ece6da; }
+  [data-nav] nav a:last-child:hover { background: #ccf24d; color: #0b1120; }
+  #pricing a:hover { background: #ccf24d; color: #0b1120; }
+  ::selection { background: #ccf24d; color: #0b1120; }
+  @keyframes md-splash-letter { from { opacity: 0; transform: translateY(0.45em) rotate(4deg); } to { opacity: 1; transform: translateY(0) rotate(0deg); } }
+  @keyframes md-pulse { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
+  @keyframes md-marquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
+  @keyframes md-dash { to { stroke-dashoffset: 0; } }
+</style>
+</helmet>
+
+<div data-md-root="1" style="background:#0b1120; color:#ece6da; font-family:Geist, system-ui, sans-serif; position:relative;">
+
+  <div data-cursor="1" style="position:fixed; top:0; left:0; z-index:300; width:34px; height:34px; margin:-17px 0 0 -17px; border:1px solid rgba(204,242,77,0.55); border-radius:50%; pointer-events:none; opacity:0; display:flex; align-items:center; justify-content:center; transition:width 420ms cubic-bezier(.16,1,.3,1), height 420ms cubic-bezier(.16,1,.3,1), background 420ms ease, opacity 300ms ease;">
+    <span data-cursor-label="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:9px; letter-spacing:0.12em; text-transform:uppercase; color:#0b1120; opacity:0; white-space:nowrap;"></span>
+  </div>
+
+  <div data-splash="1" style="position:fixed; inset:0; z-index:200; pointer-events:none;">
+    <div data-panel-top="1" style="position:absolute; left:0; right:0; top:0; height:50.2%; background:#0b1120; will-change:transform;"></div>
+    <div data-panel-bot="1" style="position:absolute; left:0; right:0; bottom:0; height:50.2%; background:#0b1120; will-change:transform;"></div>
+
+    <div data-splash-overlay="1" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:clamp(24px,4vw,56px);">
+      <div style="position:absolute; top:clamp(24px,4vw,56px); left:clamp(24px,4vw,56px); right:clamp(24px,4vw,56px); display:flex; justify-content:space-between; gap:20px; font-family:'Geist Mono', ui-monospace, monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.4);">
+        <span data-splash-fade="1">MirageDevo</span>
+        <span data-splash-fade="1">Est. 2024 &#183; IST</span>
+      </div>
+
+      <div data-splash-word="1" style="display:flex; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(38px,7.5vw,120px); line-height:1; letter-spacing:-0.025em;">
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">M</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">i</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">r</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">a</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">g</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" style="display:inline-block;">e</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" data-accent-fg="1" style="display:inline-block; color:#ccf24d;">D</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" data-accent-fg="1" style="display:inline-block; color:#ccf24d;">e</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" data-accent-fg="1" style="display:inline-block; color:#ccf24d;">v</span></span>
+        <span style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-splash-char="1" data-accent-fg="1" style="display:inline-block; color:#ccf24d;">o</span></span>
+      </div>
+
+      <div style="position:absolute; bottom:clamp(24px,4vw,56px); left:clamp(24px,4vw,56px); display:flex; align-items:flex-end; gap:14px;">
+        <span data-splash-pct="1" style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(56px,11vw,180px); line-height:0.86; letter-spacing:-0.04em; color:rgba(236,230,218,0.92);">000</span>
+        <span data-splash-fade="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.4); padding-bottom:0.9em;">Loading</span>
+      </div>
+
+      <div style="position:absolute; bottom:clamp(24px,4vw,56px); right:clamp(24px,4vw,56px); width:min(240px,34vw); height:1px; background:rgba(236,230,218,0.16); overflow:hidden;">
+        <div data-splash-fill="1" data-accent-bg="1" style="position:absolute; inset:0; background:#ccf24d; transform:scaleX(0); transform-origin:left center;"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <header data-nav="1" style="position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:22px clamp(20px,4vw,56px); border-bottom:1px solid transparent;">
+    <a href="#top" style="font-family:'Instrument Serif', Georgia, serif; font-size:22px; letter-spacing:-0.01em;">Mirage<span data-accent-fg="1" style="color:#ccf24d;">Devo</span></a>
+    <nav style="display:flex; align-items:center; flex-wrap:nowrap; gap:clamp(12px,2vw,34px); font-size:13.5px;">
+      <a href="AI Automation Product Page.dc.html" style="display:inline-block; white-space:nowrap; color:rgba(236,230,218,0.72); transition:color 260ms ease;">AI Automation</a>
+      <a href="#work" style="display:inline-block; white-space:nowrap; color:rgba(236,230,218,0.72); transition:color 260ms ease;">Work</a>
+      <a href="#websites" style="display:inline-block; white-space:nowrap; color:rgba(236,230,218,0.72); transition:color 260ms ease;">Websites</a>
+      <a href="#notes" style="display:inline-block; white-space:nowrap; color:rgba(236,230,218,0.72); transition:color 260ms ease;">Notes</a>
+      <a href="#contact" data-accent-border="1" style="display:inline-block; white-space:nowrap; border:1px solid #ccf24d; border-radius:999px; padding:9px 18px; font-size:13px; line-height:1.2; transition:background 260ms ease, color 260ms ease;">Book a call</a>
+    </nav>
+  </header>
+
+  <section id="top" data-screen-label="Hero" data-cursor-label="drag" style="position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:flex-end; padding:140px clamp(20px,4vw,56px) clamp(36px,5vh,64px); overflow:hidden;">
+    <canvas data-hero-canvas="1" style="position:absolute; inset:0; width:100%; height:100%; display:block; opacity:0.9;"></canvas>
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 70% 20%, rgba(204,242,77,0.1), rgba(11,17,32,0) 55%), linear-gradient(180deg, rgba(11,17,32,0.2) 0%, rgba(11,17,32,0.55) 55%, rgba(11,17,32,0.94) 100%); pointer-events:none;"></div>
+
+    <div style="position:relative; display:flex; flex-direction:column; gap:clamp(28px,5vh,56px);">
+      <h1 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(44px,8.6vw,160px); line-height:0.94; letter-spacing:-0.035em;">
+        <span data-split="1" style="display:block;">I build the work</span>
+        <span data-split="1" style="display:block;">you keep doing by hand.</span>
+      </h1>
+
+      <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:32px; border-top:1px solid rgba(236,230,218,0.14); padding-top:26px;">
+        <p data-reveal="1" style="margin:0; max-width:40ch; font-size:clamp(15px,1.25vw,19px); line-height:1.55; color:rgba(236,230,218,0.7); text-wrap:pretty;">I'm a developer working on my own, building AI automation systems and custom websites. Right now most of my time goes into a WhatsApp booking agent for clinics and salons.</p>
+        <div data-reveal="1" style="display:flex; align-items:center; gap:18px;">
+          <a href="#work" data-accent-bg="1" style="display:inline-block; background:#ccf24d; color:#0b1120; border-radius:999px; padding:15px 28px; font-size:14px; font-weight:500;">See what I've built</a>
+          <a href="#contact" style="display:inline-block; font-size:14px; color:rgba(236,230,218,0.72); border-bottom:1px solid rgba(236,230,218,0.25); padding-bottom:3px;">Work with me</a>
+        </div>
+        <div data-reveal="1" style="display:flex; flex-direction:column; gap:6px; font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.42);">
+          <span>Scroll</span>
+          <span data-scroll-arrow="1" style="font-size:14px; transition:opacity 600ms ease;">&#8595;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Capability marquee" style="border-top:1px solid rgba(236,230,218,0.12); border-bottom:1px solid rgba(236,230,218,0.12); padding:22px 0; overflow:hidden;">
+    <div data-marquee="1" style="display:flex; width:max-content; animation:md-marquee 34s linear infinite;">
+      <div style="display:flex; align-items:center; gap:clamp(28px,4vw,64px); padding-right:clamp(28px,4vw,64px); font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">
+        <span>Lead qualification</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Support automation</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Booking systems</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Next.js builds</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Reporting pipelines</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Agency white-label</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:clamp(28px,4vw,64px); padding-right:clamp(28px,4vw,64px); font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">
+        <span>Lead qualification</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Support automation</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Booking systems</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Next.js builds</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Reporting pipelines</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span><span>Agency white-label</span><span data-accent-fg="1" style="color:#ccf24d;">&#9679;</span>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Proof strip" style="border-bottom:1px solid rgba(236,230,218,0.12); padding:clamp(48px,7vh,88px) clamp(20px,4vw,56px);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:clamp(28px,4vw,64px);">
+      <div data-reveal="1" style="display:flex; flex-direction:column; gap:10px;">
+        <div style="display:flex; align-items:baseline; gap:4px; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(44px,5.5vw,86px); line-height:1; letter-spacing:-0.03em;"><span data-scramble="400">400</span><span data-accent-fg="1" style="color:#ccf24d;">+</span></div>
+        <div style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Hours saved / month</div>
+      </div>
+      <div data-reveal="1" style="display:flex; flex-direction:column; gap:10px;">
+        <div style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(44px,5.5vw,86px); line-height:1; letter-spacing:-0.03em;"><span data-scramble="12">12</span></div>
+        <div style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Projects shipped</div>
+      </div>
+      <div data-reveal="1" style="display:flex; flex-direction:column; gap:10px;">
+        <div style="display:flex; align-items:baseline; gap:6px; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(44px,5.5vw,86px); line-height:1; letter-spacing:-0.03em;"><span data-scramble="3">3</span><span style="font-size:0.45em; color:rgba(236,230,218,0.55);">&#8211;4 wks</span></div>
+        <div style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Average turnaround</div>
+      </div>
+      <div data-reveal="1" style="display:flex; flex-direction:column; gap:10px;">
+        <div style="display:flex; align-items:baseline; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(44px,5.5vw,86px); line-height:1; letter-spacing:-0.03em;"><span style="color:rgba(236,230,218,0.55); font-size:0.5em; margin-right:2px;">$</span><span data-scramble="180">180</span><span>K</span></div>
+        <div style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Client revenue influenced</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" data-screen-label="Case studies" data-pin="1" data-cursor-label="scroll" style="position:relative; height:620vh;">
+    <div style="position:sticky; top:0; height:100vh; overflow:hidden; display:flex; flex-direction:column;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:24px; padding:clamp(28px,5vh,56px) clamp(20px,4vw,56px) 0;">
+        <h2 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(30px,3.6vw,60px); line-height:1; letter-spacing:-0.03em;">Selected work</h2>
+        <div style="display:flex; align-items:center; gap:16px; font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">
+          <span data-pin-index="1">01</span>
+          <span style="width:clamp(60px,14vw,180px); height:1px; background:rgba(236,230,218,0.18); position:relative; overflow:hidden;"><span data-pin-progress="1" data-accent-bg="1" style="position:absolute; inset:0; background:#ccf24d; transform:scaleX(0); transform-origin:left center;"></span></span>
+          <span>06</span>
+        </div>
+      </div>
+      <div style="flex:1; min-height:0; display:flex; align-items:center;">
+        <div data-pin-track="1" style="display:flex; gap:clamp(20px,2.5vw,40px); padding:0 clamp(20px,4vw,56px); will-change:transform;">
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/turbotech.jpg" alt="Turbo Tech industrial engineering website" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">01 &#183; Industrial engineering &#183; Kushinagar</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">Turbo Tech</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Full site &#183; video hero</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">EPC, fabrication and manpower services across seven sections, with a quote funnel front and centre.</span>
+              </div>
+            </div>
+          </article>
+
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/aesthetics.jpg" alt="Aesthetics by Jaylaxmi House home textiles website" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">02 &#183; Home textiles retail &#183; Vadodara</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">Aesthetics</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Brand site &#183; AI customiser</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">A 1972 curtain and upholstery house given an editorial site, plus a tool that visualises fabric in a room.</span>
+              </div>
+            </div>
+          </article>
+
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/fooda.jpg" alt="FOODA B2B food industry platform" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">03 &#183; B2B marketplace</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">FOODA</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Platform &#183; supplier search</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">Supplier discovery, product catalogues and a barcode scanner, built for food businesses buying direct.</span>
+              </div>
+            </div>
+          </article>
+
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/siren.jpg" alt="SIREN jewellery ecommerce site" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">04 &#183; Direct-to-consumer</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">SIR&Egrave;N</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Storefront &#183; pre-launch capture</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">Four collections framed as temperatures, with a waitlist gate that collects intent before orders open.</span>
+              </div>
+            </div>
+          </article>
+
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/bookmynail.jpg" alt="BookMyNail at-home nail studio booking site" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">05 &#183; At-home salon &#183; Ahmedabad</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">BookMyNail</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Booking flow &#183; priced menu</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">Service, date and area captured in the hero itself, so a booking starts before the first scroll.</span>
+              </div>
+            </div>
+          </article>
+
+          <article data-case="1" style="flex:0 0 auto; width:min(78vw, 940px, (100vh - 300px) * 1.6); display:flex; flex-direction:column; gap:clamp(12px,2vh,20px);">
+            <div data-mask="1" style="position:relative; aspect-ratio:2/1; background:#0e1526; border:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+              <img src="work/monicasingh.jpg" alt="Monica Singh anchor and emcee portfolio site" style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;">
+            </div>
+            <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:24px;">
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">06 &#183; Personal brand &#183; Ahmedabad</span>
+                <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.2vw,52px); line-height:1.02; letter-spacing:-0.025em;">Monica Singh</h3>
+              </div>
+              <div data-case-metric="1" style="display:flex; flex-direction:column; gap:6px; max-width:30ch;">
+                <span data-accent-fg="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#ccf24d;">Portfolio &#183; showreel &#183; enquiry</span>
+                <span style="font-size:13.5px; line-height:1.5; color:rgba(236,230,218,0.6);">An anchor's showreel, gallery and reviews arranged so event enquiries land in one click.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div style="padding:0 clamp(20px,4vw,56px) clamp(20px,3vh,36px); font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.35);">Six of twelve projects shipped &#183; more on request</div>
+    </div>
+  </section>
+
+  <section id="system" data-screen-label="Workflow diagram" data-diagram-section="1" style="position:relative; height:320vh; border-top:1px solid rgba(236,230,218,0.12);">
+    <div style="position:sticky; top:0; height:100vh; display:flex; flex-direction:column; justify-content:center; gap:clamp(24px,5vh,52px); padding:clamp(80px,12vh,140px) clamp(20px,4vw,56px) clamp(32px,6vh,72px); overflow:hidden;">
+      <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px;">
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Anatomy of a build</span>
+          <h2 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(30px,4.4vw,74px); line-height:1; letter-spacing:-0.03em; max-width:22ch;">One system, five moving parts.</h2>
+        </div>
+        <p data-diagram-caption="1" style="margin:0; max-width:34ch; font-size:15px; line-height:1.6; color:rgba(236,230,218,0.6);">A lead arrives at 11pm. By morning it has been scored, routed, answered and booked, with a record you can audit.</p>
+      </div>
+
+      <svg data-diagram="1" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet" style="width:100%; height:auto; max-height:46vh; overflow:visible;">
+        <path data-dline="1" d="M150 150 H330" stroke="rgba(236,230,218,0.35)" stroke-width="1.5" fill="none"></path>
+        <path data-dline="1" d="M450 150 H630" stroke="rgba(236,230,218,0.35)" stroke-width="1.5" fill="none"></path>
+        <path data-dline="1" d="M750 150 H930" stroke="rgba(236,230,218,0.35)" stroke-width="1.5" fill="none"></path>
+        <path data-dline="1" d="M600 190 V262 H1050 V190" stroke="rgba(236,230,218,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="4 6"></path>
+        <g data-dnode="1">
+          <rect x="30" y="110" width="120" height="80" rx="4" fill="#111a2c" stroke="rgba(236,230,218,0.22)"></rect>
+          <text x="90" y="146" text-anchor="middle" fill="rgba(236,230,218,0.85)" font-family="Geist, sans-serif" font-size="15">Intake</text>
+          <text x="90" y="166" text-anchor="middle" fill="rgba(236,230,218,0.45)" font-family="Geist Mono, monospace" font-size="10" letter-spacing="1.4">FORM · CALL · DM</text>
+        </g>
+        <g data-dnode="1">
+          <rect x="330" y="110" width="120" height="80" rx="4" fill="#111a2c" stroke="rgba(236,230,218,0.22)"></rect>
+          <text x="390" y="146" text-anchor="middle" fill="rgba(236,230,218,0.85)" font-family="Geist, sans-serif" font-size="15">Qualify</text>
+          <text x="390" y="166" text-anchor="middle" fill="rgba(236,230,218,0.45)" font-family="Geist Mono, monospace" font-size="10" letter-spacing="1.4">SCORE · TAG</text>
+        </g>
+        <g data-dnode="1">
+          <rect x="630" y="110" width="120" height="80" rx="4" fill="#111a2c" stroke="rgba(236,230,218,0.22)"></rect>
+          <text x="690" y="146" text-anchor="middle" fill="rgba(236,230,218,0.85)" font-family="Geist, sans-serif" font-size="15">Respond</text>
+          <text x="690" y="166" text-anchor="middle" fill="rgba(236,230,218,0.45)" font-family="Geist Mono, monospace" font-size="10" letter-spacing="1.4">REPLY · ROUTE</text>
+        </g>
+        <g data-dnode="1">
+          <rect x="930" y="110" width="120" height="80" rx="4" fill="#111a2c" stroke="rgba(236,230,218,0.22)"></rect>
+          <text x="990" y="146" text-anchor="middle" fill="rgba(236,230,218,0.85)" font-family="Geist, sans-serif" font-size="15">Book</text>
+          <text x="990" y="166" text-anchor="middle" fill="rgba(236,230,218,0.45)" font-family="Geist Mono, monospace" font-size="10" letter-spacing="1.4">CALENDAR</text>
+        </g>
+        <g data-dnode="1">
+          <rect x="510" y="228" width="180" height="66" rx="4" fill="#0b1120" stroke="rgba(204,242,77,0.5)" data-accent-stroke="1"></rect>
+          <text x="600" y="256" text-anchor="middle" fill="#ccf24d" data-accent-svg-fg="1" font-family="Geist, sans-serif" font-size="14">Audit log</text>
+          <text x="600" y="276" text-anchor="middle" fill="rgba(236,230,218,0.45)" font-family="Geist Mono, monospace" font-size="10" letter-spacing="1.4">EVERY STEP RECORDED</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section id="automation" data-screen-label="AI automation teaser" style="position:relative; padding:clamp(80px,14vh,180px) clamp(20px,4vw,56px); border-top:1px solid rgba(236,230,218,0.12); overflow:hidden;">
+    <div data-parallax="0.12" style="position:absolute; left:50%; top:50%; width:70vw; height:70vw; margin:-35vw 0 0 -35vw; border-radius:50%; background:radial-gradient(circle at center, rgba(204,242,77,0.08), rgba(204,242,77,0) 60%); pointer-events:none;"></div>
+    <div style="position:relative; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:clamp(32px,5vw,80px); align-items:end;">
+      <div style="display:flex; flex-direction:column; gap:26px;">
+        <span data-reveal="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Track A &#183; AI automation</span>
+        <h2 data-split="1" style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(34px,5.4vw,92px); line-height:0.98; letter-spacing:-0.03em; max-width:20ch;">Your business runs on repetition.</h2>
+        <p data-reveal="1" style="margin:0; max-width:46ch; font-size:clamp(15px,1.2vw,18px); line-height:1.6; color:rgba(236,230,218,0.68); text-wrap:pretty;">Intake, follow-up, scheduling, reporting. I map the work you repeat every week, then build the system that does it without you.</p>
+        <a data-reveal="1" data-magnetic="1" href="#automation" style="align-self:flex-start; display:inline-flex; align-items:center; gap:10px; font-size:14px; border-bottom:1px solid rgba(236,230,218,0.25); padding-bottom:4px;">See how it works <span data-accent-fg="1" style="color:#ccf24d;">&#8594;</span></a>
+      </div>
+      <div style="display:flex; flex-direction:column;">
+        <div data-reveal="1" data-row="1" style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:22px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.5vw,22px);">Lead qualification</span>
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Clinics &#183; D2C</span>
+        </div>
+        <div data-reveal="1" data-row="1" style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:22px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.5vw,22px);">Support automation</span>
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Industrial</span>
+        </div>
+        <div data-reveal="1" data-row="1" style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:22px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.5vw,22px);">Booking &amp; reminders</span>
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Clinics</span>
+        </div>
+        <div data-reveal="1" data-row="1" style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; padding:22px 0; border-top:1px solid rgba(236,230,218,0.14); border-bottom:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.5vw,22px);">Reporting &amp; handoff</span>
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(236,230,218,0.45);">All</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="websites" data-screen-label="Services split" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); border-top:1px solid rgba(236,230,218,0.12);">
+    <div data-reveal="1" style="padding:clamp(40px,7vh,88px) clamp(24px,3.5vw,56px); display:flex; flex-direction:column; gap:18px; border-right:1px solid rgba(236,230,218,0.12);">
+      <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.45);">01</span>
+      <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.4vw,54px); line-height:1.02; letter-spacing:-0.025em;">AI Automation</h3>
+      <p style="margin:0; max-width:40ch; font-size:15.5px; line-height:1.6; color:rgba(236,230,218,0.65);">Custom workflow systems built around how your team actually works. Scoped, built, documented, handed over.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;">
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Workflow mapping</span>
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Integrations</span>
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Agent build</span>
+      </div>
+    </div>
+    <div data-reveal="1" style="padding:clamp(40px,7vh,88px) clamp(24px,3.5vw,56px); display:flex; flex-direction:column; gap:18px;">
+      <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.45);">02</span>
+      <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(28px,3.4vw,54px); line-height:1.02; letter-spacing:-0.025em;">Websites</h3>
+      <p style="margin:0; max-width:40ch; font-size:15.5px; line-height:1.6; color:rgba(236,230,218,0.65);">Custom-coded sites that load fast and read expensive. No templates, no page-builder tells.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;">
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Design</span>
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Next.js build</span>
+        <span style="border:1px solid rgba(236,230,218,0.18); border-radius:999px; padding:7px 14px; font-size:12.5px; color:rgba(236,230,218,0.7);">Motion</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" data-screen-label="Process" style="background:#ece6da; color:#14161a; padding:clamp(64px,10vh,140px) clamp(20px,4vw,56px);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(32px,5vw,80px); align-items:start;">
+      <div style="position:sticky; top:120px; display:flex; flex-direction:column; gap:18px;">
+        <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(20,22,26,0.5);">How it goes</span>
+        <h2 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(32px,4.6vw,76px); line-height:0.98; letter-spacing:-0.03em; max-width:16ch;">Four steps, no mystery.</h2>
+        <div style="display:flex; align-items:baseline; gap:12px; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(60px,9vw,150px); line-height:1; letter-spacing:-0.04em;">
+          <span data-step-index="1">01</span>
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(20,22,26,0.45);">/ 04</span>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:0;">
+        <div data-step="1" style="padding:clamp(24px,4vh,44px) 0; border-top:1px solid rgba(20,22,26,0.16); display:flex; flex-direction:column; gap:10px;">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(20,22,26,0.5);">Step 01</span>
+          <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,2.8vw,42px); line-height:1.05; letter-spacing:-0.02em;">Diagnose</h3>
+          <p style="margin:0; max-width:48ch; font-size:15.5px; line-height:1.6; color:rgba(20,22,26,0.68);">A working session on where the hours actually go. You leave with a written list of what is worth automating and what is not.</p>
+        </div>
+        <div data-step="1" style="padding:clamp(24px,4vh,44px) 0; border-top:1px solid rgba(20,22,26,0.16); display:flex; flex-direction:column; gap:10px;">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(20,22,26,0.5);">Step 02</span>
+          <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,2.8vw,42px); line-height:1.05; letter-spacing:-0.02em;">Map</h3>
+          <p style="margin:0; max-width:48ch; font-size:15.5px; line-height:1.6; color:rgba(20,22,26,0.68);">A single-page system diagram and a fixed scope. Priced before anything gets built, so there are no moving numbers.</p>
+        </div>
+        <div data-step="1" style="padding:clamp(24px,4vh,44px) 0; border-top:1px solid rgba(20,22,26,0.16); display:flex; flex-direction:column; gap:10px;">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(20,22,26,0.5);">Step 03</span>
+          <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,2.8vw,42px); line-height:1.05; letter-spacing:-0.02em;">Build</h3>
+          <p style="margin:0; max-width:48ch; font-size:15.5px; line-height:1.6; color:rgba(20,22,26,0.68);">Three to four weeks, with something to look at every week. You approve as it goes rather than at the end.</p>
+        </div>
+        <div data-step="1" style="padding:clamp(24px,4vh,44px) 0; border-top:1px solid rgba(20,22,26,0.16); border-bottom:1px solid rgba(20,22,26,0.16); display:flex; flex-direction:column; gap:10px;">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(20,22,26,0.5);">Step 04</span>
+          <h3 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,2.8vw,42px); line-height:1.05; letter-spacing:-0.02em;">Hand over</h3>
+          <p style="margin:0; max-width:48ch; font-size:15.5px; line-height:1.6; color:rgba(20,22,26,0.68);">Documentation, a walkthrough recording, and thirty days of support. The system is yours, not rented.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Testimonials" style="padding:clamp(72px,12vh,160px) clamp(20px,4vw,56px); border-bottom:1px solid rgba(236,230,218,0.12);">
+    <div style="display:flex; flex-direction:column; gap:clamp(32px,6vh,64px);">
+      <span data-reveal="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">What clients say</span>
+      <div data-quotes="1" style="position:relative; min-height:clamp(220px,34vh,320px);">
+        <figure data-quote="1" style="margin:0; position:absolute; inset:0; display:flex; flex-direction:column; justify-content:space-between; gap:28px;">
+          <blockquote style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,3.6vw,60px); line-height:1.1; letter-spacing:-0.025em; max-width:26ch; text-wrap:pretty;">He rebuilt the intake in a fortnight and my front desk got its mornings back.</blockquote>
+          <figcaption style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Placeholder attribution &#183; RDCC</figcaption>
+        </figure>
+        <figure data-quote="1" style="margin:0; position:absolute; inset:0; display:flex; flex-direction:column; justify-content:space-between; gap:28px;">
+          <blockquote style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,3.6vw,60px); line-height:1.1; letter-spacing:-0.025em; max-width:26ch; text-wrap:pretty;">The site finally looks like the company we tell people we are.</blockquote>
+          <figcaption style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Placeholder attribution &#183; Marca</figcaption>
+        </figure>
+        <figure data-quote="1" style="margin:0; position:absolute; inset:0; display:flex; flex-direction:column; justify-content:space-between; gap:28px;">
+          <blockquote style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(24px,3.6vw,60px); line-height:1.1; letter-spacing:-0.025em; max-width:26ch; text-wrap:pretty;">We brief him like an in-house dev and he ships like one. That is rare for white-label.</blockquote>
+          <figcaption style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.5);">Placeholder attribution &#183; agency partner</figcaption>
+        </figure>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <button data-quote-dot="1" type="button" style="width:34px; height:2px; border:0; padding:0; background:rgba(236,230,218,0.25); cursor:pointer;"></button>
+        <button data-quote-dot="1" type="button" style="width:34px; height:2px; border:0; padding:0; background:rgba(236,230,218,0.25); cursor:pointer;"></button>
+        <button data-quote-dot="1" type="button" style="width:34px; height:2px; border:0; padding:0; background:rgba(236,230,218,0.25); cursor:pointer;"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" data-screen-label="Pricing philosophy" style="padding:clamp(72px,12vh,160px) clamp(20px,4vw,56px); border-bottom:1px solid rgba(236,230,218,0.12);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(32px,5vw,80px);">
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <span data-reveal="1" style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">How pricing works</span>
+        <h2 data-split="1" style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(30px,4.4vw,74px); line-height:1; letter-spacing:-0.03em; max-width:18ch;">Ranges up front, fixed before we start.</h2>
+        <p data-reveal="1" style="margin:0; max-width:44ch; font-size:15.5px; line-height:1.6; color:rgba(236,230,218,0.65);">Every project gets a written scope and one number. If the scope grows, we price the change before it happens.</p>
+      </div>
+      <div style="display:flex; flex-direction:column;">
+        <div data-reveal="1" style="display:flex; align-items:baseline; gap:18px; padding:24px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.4vw,21px);">Single automation</span>
+        </div>
+        <div data-reveal="1" style="display:flex; align-items:baseline; gap:18px; padding:24px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.4vw,21px);">Multi-step system</span>
+        </div>
+        <div data-reveal="1" style="display:flex; align-items:baseline; gap:18px; padding:24px 0; border-top:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.4vw,21px);">Website, design &amp; build</span>
+        </div>
+        <div data-reveal="1" style="display:flex; align-items:baseline; gap:18px; padding:24px 0; border-top:1px solid rgba(236,230,218,0.14); border-bottom:1px solid rgba(236,230,218,0.14);">
+          <span style="font-size:clamp(16px,1.4vw,21px);">Agency white-label</span>
+        </div>
+        <a data-reveal="1" href="AI Automation Product Page.dc.html" data-accent-border="1" style="align-self:flex-start; margin-top:26px; display:inline-block; border:1px solid #ccf24d; border-radius:999px; padding:14px 26px; font-size:14px; transition:background 260ms ease, color 260ms ease;">Know more</a>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Stack and availability" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); border-bottom:1px solid rgba(236,230,218,0.12);">
+    <div data-reveal="1" style="padding:clamp(40px,7vh,80px) clamp(24px,3.5vw,56px); display:flex; flex-direction:column; gap:22px; border-right:1px solid rgba(236,230,218,0.12);">
+      <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Built with</span>
+      <div style="display:flex; flex-wrap:wrap; gap:10px;">
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">Next.js</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">Tailwind</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">GSAP</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">Lenis</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">Vercel</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">Supabase</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">n8n</span>
+        <span style="border:1px solid rgba(236,230,218,0.16); padding:9px 15px; font-size:13px; color:rgba(236,230,218,0.72);">OpenAI &amp; Claude APIs</span>
+      </div>
+    </div>
+    <div data-reveal="1" style="padding:clamp(40px,7vh,80px) clamp(24px,3.5vw,56px); display:flex; flex-direction:column; gap:20px;">
+      <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Availability</span>
+      <div style="display:flex; align-items:center; gap:12px; font-size:clamp(18px,1.8vw,26px);">
+        <span data-accent-bg="1" style="width:8px; height:8px; border-radius:50%; background:#ccf24d; animation:md-pulse 2.6s ease-in-out infinite;"></span>
+        <span>Two project slots open for October</span>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px; font-size:14.5px; color:rgba(236,230,218,0.62);">
+        <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px solid rgba(236,230,218,0.12); padding-top:12px;"><span>Timezone</span><span data-clock="1" style="font-family:'Geist Mono', ui-monospace, monospace;">IST &#183; UTC+5:30</span></div>
+        <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px solid rgba(236,230,218,0.12); padding-top:12px;"><span>Reply time</span><span style="font-family:'Geist Mono', ui-monospace, monospace;">Under 12 hours</span></div>
+        <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px solid rgba(236,230,218,0.12); padding-top:12px;"><span>Working with</span><span style="font-family:'Geist Mono', ui-monospace, monospace;">Clinics, industrial, D2C, agencies</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="notes" data-screen-label="Notes teaser" style="padding:clamp(72px,12vh,150px) clamp(20px,4vw,56px);">
+    <div style="display:flex; flex-direction:column; gap:clamp(28px,5vh,52px);">
+      <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px;">
+        <h2 data-reveal="1" style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(30px,4.2vw,68px); line-height:1; letter-spacing:-0.03em;">Notes</h2>
+        <a data-reveal="1" data-magnetic="1" href="#notes" style="font-size:14px; color:rgba(236,230,218,0.7); border-bottom:1px solid rgba(236,230,218,0.25); padding-bottom:3px;">All writing</a>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:clamp(20px,3vw,48px);">
+        <a data-reveal="1" href="#notes" data-magnetic="1" style="display:flex; flex-direction:column; gap:14px; padding-top:20px; border-top:1px solid rgba(236,230,218,0.16);">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Automation &#183; 6 min</span>
+          <span style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(20px,2vw,30px); line-height:1.15;">The three workflows every clinic should automate first</span>
+        </a>
+        <a data-reveal="1" href="#notes" data-magnetic="1" style="display:flex; flex-direction:column; gap:14px; padding-top:20px; border-top:1px solid rgba(236,230,218,0.16);">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Web &#183; 4 min</span>
+          <span style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(20px,2vw,30px); line-height:1.15;">Why your site being fast is a sales argument</span>
+        </a>
+        <a data-reveal="1" href="#notes" data-magnetic="1" style="display:flex; flex-direction:column; gap:14px; padding-top:20px; border-top:1px solid rgba(236,230,218,0.16);">
+          <span style="font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.45);">Process &#183; 5 min</span>
+          <span style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(20px,2vw,30px); line-height:1.15;">What I ask before quoting an automation project</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-screen-label="Footer CTA" style="padding:clamp(80px,16vh,200px) clamp(20px,4vw,56px) clamp(32px,5vh,56px); display:flex; flex-direction:column; gap:clamp(48px,9vh,120px); border-top:1px solid rgba(236,230,218,0.12);">
+    <div style="display:flex; flex-direction:column; gap:clamp(28px,4vh,44px);">
+      <h2 data-split="1" style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(40px,8.5vw,150px); line-height:0.94; letter-spacing:-0.035em; max-width:18ch;">Tell me what you keep doing by hand.</h2>
+      <div data-reveal="1" style="display:flex; flex-wrap:wrap; align-items:center; gap:20px;">
+        <a href="#contact" data-magnetic="1" data-accent-bg="1" style="background:#ccf24d; color:#0b1120; border-radius:999px; padding:16px 30px; font-size:14.5px; font-weight:500;">Book a 20-minute call</a>
+        <a href="mailto:hello@miragedevo.com" data-magnetic="1" style="font-size:14.5px; color:rgba(236,230,218,0.72); border-bottom:1px solid rgba(236,230,218,0.25); padding-bottom:3px;">hello@miragedevo.com</a>
+      </div>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:24px; border-top:1px solid rgba(236,230,218,0.12); padding-top:24px; font-family:'Geist Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.42);">
+      <span>MirageDevo &#183; 2026</span>
+      <div style="display:flex; gap:20px;">
+        <a href="#automation" style="color:rgba(236,230,218,0.42);">AI Automation</a>
+        <a href="#websites" style="color:rgba(236,230,218,0.42);">Websites</a>
+        <a href="#work" style="color:rgba(236,230,218,0.42);">Work</a>
+        <a href="#notes" style="color:rgba(236,230,218,0.42);">Notes</a>
+      </div>
+      <span>Agency partnerships by referral</span>
+    </div>
+  </section>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#ccf24d&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#ccf24d&quot;,&quot;#e8572a&quot;,&quot;#7ad1c8&quot;,&quot;#f2f0eb&quot;],&quot;section&quot;:&quot;Brand&quot;},&quot;motion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;cinematic&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;restrained&quot;,&quot;snappy&quot;,&quot;cinematic&quot;],&quot;section&quot;:&quot;Motion&quot;},&quot;splash&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this.reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const level = this.props.motion ?? "cinematic";
+    this.dur = level === "restrained" ? 520 : level === "snappy" ? 380 : 1050;
+    this.dist = level === "restrained" ? 16 : level === "snappy" ? 22 : 64;
+    this.ease = "cubic-bezier(.16,1,.3,1)";
+
+    this.applyAccent();
+    this.splitHeadings();
+    this.setupReveals();
+    this.setupScramble();
+    this.setupDiagram();
+    this.runSplash();
+    this.setupQuotes();
+    this.setupPointer();
+    this.setupHeroField();
+    this.setupScroll();
+  }
+
+  componentDidUpdate() { this.applyAccent(); }
+
+  componentWillUnmount() {
+    if (this.loopRaf) cancelAnimationFrame(this.loopRaf);
+    if (this.pumpTimer) clearInterval(this.pumpTimer);
+    if (this.onScroll) {
+      window.removeEventListener("scroll", this.onScroll, { capture: true });
+      document.removeEventListener("scroll", this.onScroll, { capture: true });
+      window.removeEventListener("resize", this.onScroll);
+    }
+    window.removeEventListener("resize", this.onResize);
+    window.removeEventListener("pointermove", this.onPointer);
+    if (this.quoteTimer) clearInterval(this.quoteTimer);
+    if (this.fieldRaf) cancelAnimationFrame(this.fieldRaf);
+  }
+
+  q(sel) { return Array.from(document.querySelectorAll(sel)); }
+
+  scrollY() {
+    const de = document.scrollingElement || document.documentElement;
+    return (de && de.scrollTop) || window.scrollY || document.body.scrollTop || 0;
+  }
+
+  applyAccent() {
+    const a = this.props.accent;
+    if (!a) return;
+    this.q("[data-accent-fg]").forEach(function (el) { el.style.color = a; });
+    this.q("[data-accent-bg]").forEach(function (el) { el.style.background = a; });
+    this.q("[data-accent-border]").forEach(function (el) { el.style.borderColor = a; });
+    this.q("[data-accent-stroke]").forEach(function (el) { el.setAttribute("stroke", a); });
+    this.q("[data-accent-svg-fg]").forEach(function (el) { el.setAttribute("fill", a); });
+    const cur = document.querySelector("[data-cursor]");
+    if (cur) cur.style.borderColor = a;
+    this.accent = a;
+  }
+
+  splitHeadings() {
+    const dur = this.dur, ease = this.ease, reduce = this.reduce;
+    this.q("[data-split]").forEach(function (el) {
+      if (el.getAttribute("data-split-done")) return;
+      const words = (el.textContent || "").split(/\s+/).filter(Boolean);
+      el.textContent = "";
+      el.style.display = el.tagName === "SPAN" ? "block" : el.style.display;
+      words.forEach(function (word, wi) {
+        const wrap = document.createElement("span");
+        wrap.style.display = "inline-block";
+        wrap.style.overflow = "hidden";
+        wrap.style.verticalAlign = "top";
+        wrap.style.paddingBottom = "0.06em";
+        Array.from(word).forEach(function (ch) {
+          const s = document.createElement("span");
+          s.textContent = ch;
+          s.style.display = "inline-block";
+          s.setAttribute("data-char", "1");
+          if (!reduce) {
+            s.style.transform = "translateY(105%)";
+            s.style.transition = "transform " + dur + "ms " + ease;
+          }
+          wrap.appendChild(s);
+        });
+        el.appendChild(wrap);
+        if (wi < words.length - 1) el.appendChild(document.createTextNode(" "));
+      });
+      el.setAttribute("data-split-done", "1");
+    });
+  }
+
+  runSplash() {
+    const splash = document.querySelector("[data-splash]");
+    if (!splash) return;
+    const enabled = this.props.splash ?? true;
+    if (!enabled || sessionStorage.getItem("md_splash_v3_seen") === "1") { splash.style.display = "none"; this.playHero(); return; }
+    sessionStorage.setItem("md_splash_v3_seen", "1");
+    const reduce = this.reduce;
+    const ease = "cubic-bezier(.16,1,.3,1)";
+    const heavy = "cubic-bezier(.76,0,.24,1)";
+    const chars = Array.from(splash.querySelectorAll("[data-splash-char]"));
+    const fades = Array.from(splash.querySelectorAll("[data-splash-fade]"));
+    const fill = splash.querySelector("[data-splash-fill]");
+    const pct = splash.querySelector("[data-splash-pct]");
+    const word = splash.querySelector("[data-splash-word]");
+    const overlay = splash.querySelector("[data-splash-overlay]");
+    const top = splash.querySelector("[data-panel-top]");
+    const bot = splash.querySelector("[data-panel-bot]");
+    const run = reduce ? 500 : 1900;
+    const hold = reduce ? 600 : 2500;
+    const self = this;
+
+    if (!reduce) {
+      chars.forEach(function (c) { c.style.transform = "translateY(110%)"; });
+      fades.forEach(function (f) { f.style.opacity = "0"; });
+      requestAnimationFrame(function () {
+        chars.forEach(function (c, i) {
+          c.style.transition = "transform 900ms " + ease;
+          c.style.transitionDelay = 80 + i * 55 + "ms";
+          c.style.transform = "translateY(0)";
+        });
+        fades.forEach(function (f, i) {
+          f.style.transition = "opacity 800ms ease";
+          f.style.transitionDelay = 300 + i * 120 + "ms";
+          f.style.opacity = "1";
+        });
+        if (fill) { fill.style.transition = "transform " + run + "ms " + ease; fill.style.transform = "scaleX(1)"; }
+        if (pct) {
+          const t0 = performance.now();
+          const tick = function (now) {
+            const p = Math.min((now - t0) / run, 1);
+            pct.textContent = ("00" + Math.round(100 * (1 - Math.pow(1 - p, 2.2)))).slice(-3);
+            if (p < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+      });
+    } else {
+      if (fill) fill.style.transform = "scaleX(1)";
+      if (pct) pct.textContent = "100";
+    }
+
+    setTimeout(function () {
+      if (word) { word.style.transition = "transform 700ms " + heavy; word.style.transform = "translateY(-40px)"; }
+      if (overlay) { overlay.style.transition = "opacity 620ms ease"; overlay.style.opacity = "0"; }
+    }, hold - 350);
+
+    setTimeout(function () {
+      if (top) { top.style.transition = "transform 1150ms " + heavy; top.style.transform = "translateY(-100%)"; }
+      if (bot) { bot.style.transition = "transform 1150ms " + heavy; bot.style.transform = "translateY(100%)"; }
+      self.playHero();
+      setTimeout(function () { splash.style.display = "none"; }, 1250);
+    }, hold);
+  }
+
+  playHero() {
+    const hero = document.querySelector("#top");
+    if (!hero) return;
+    this.revealNode(hero);
+  }
+
+  revealNode(scope) {
+    Array.from(scope.querySelectorAll("[data-split]")).forEach(function (el) {
+      el.setAttribute("data-rv-done", "1");
+      Array.from(el.querySelectorAll("[data-char]")).forEach(function (s, i) {
+        s.style.transitionDelay = Math.min(i * 16, 620) + "ms";
+        s.style.transform = "translateY(0)";
+      });
+    });
+    Array.from(scope.querySelectorAll("[data-reveal]")).forEach(function (el, i) {
+      el.setAttribute("data-rv-done", "1");
+      el.style.transitionDelay = Math.min(i * 90, 520) + "ms";
+      el.style.opacity = "1";
+      el.style.transform = "none";
+    });
+    Array.from(scope.querySelectorAll("[data-mask]")).forEach(function (el) {
+      el.setAttribute("data-mask-open", "1");
+      el.style.clipPath = "inset(0% 0% 0% 0%)";
+    });
+  }
+
+  fireReveal(el, snap) {
+    if (el.getAttribute("data-rv-done") === "1") return;
+    el.setAttribute("data-rv-done", "1");
+    if (el.hasAttribute("data-reveal")) {
+      const sibs = Array.from(el.parentElement ? el.parentElement.children : []).filter(function (n) { return n.hasAttribute && n.hasAttribute("data-reveal"); });
+      const n = Math.max(sibs.indexOf(el), 0);
+      el.style.transitionDelay = snap ? "0ms" : Math.min(n * 100, 480) + "ms";
+      if (snap) el.style.transition = "none";
+      el.style.opacity = "1";
+      el.style.transform = "none";
+    }
+    if (el.hasAttribute("data-split")) {
+      Array.from(el.querySelectorAll("[data-char]")).forEach(function (s, i) {
+        s.style.transitionDelay = snap ? "0ms" : Math.min(i * 18, 700) + "ms";
+        if (snap) s.style.transition = "none";
+        s.style.transform = "translateY(0)";
+      });
+    }
+  }
+
+  fireScramble(el, snap) {
+    if (el.getAttribute("data-sc-done") === "1") return;
+    el.setAttribute("data-sc-done", "1");
+    const final = el.getAttribute("data-scramble");
+    if (snap) { el.textContent = final; return; }
+    if (snap) { el.textContent = final; return; }
+    const len = final.length;
+    const t0 = performance.now();
+    const tick = function (now) {
+      const p = Math.min((now - t0) / 1400, 1);
+      if (p < 1) {
+        const settled = Math.floor(p * p * len);
+        let out = final.slice(0, settled);
+        for (let i = settled; i < len; i++) out += String(Math.floor(Math.random() * 10));
+        el.textContent = out;
+        requestAnimationFrame(tick);
+      } else {
+        el.textContent = final;
+      }
+    };
+    requestAnimationFrame(tick);
+  }
+
+  setupReveals() {
+    if (this.reduce || !("IntersectionObserver" in window)) return;
+    const dur = this.dur, ease = this.ease, dist = this.dist;
+    this.q("[data-reveal]").forEach(function (el) {
+      el.style.opacity = "0";
+      el.style.transform = "translateY(" + dist + "px)";
+      el.style.transition = "opacity " + dur + "ms " + ease + ", transform " + dur + "ms " + ease;
+    });
+    this.q("[data-mask]").forEach(function (el) {
+      el.style.clipPath = "inset(0% 0% 100% 0%)";
+      el.style.transition = "clip-path " + (dur + 200) + "ms " + ease;
+    });
+  }
+
+  setupScramble() {
+    if (this.reduce) return;
+    this.q("[data-scramble]").forEach(function (el) { el.textContent = "0"; });
+  }
+
+  setupDiagram() { }
+
+  paintDiagram(vh) {
+    if (this.reduce) return;
+    const section = document.querySelector("[data-diagram-section]");
+    if (!section) return;
+    const dnodes = this.q("[data-dnode]");
+    const dlines = this.q("[data-dline]");
+    if (!dnodes.length) return;
+    const accent = this.props.accent || "#ccf24d";
+
+    dlines.forEach(function (p) {
+      if (p.getAttribute("data-len")) return;
+      const len = p.getTotalLength ? p.getTotalLength() : 200;
+      p.style.strokeDasharray = len;
+      p.style.strokeDashoffset = len;
+      p.setAttribute("data-len", len);
+    });
+    dnodes.forEach(function (g) {
+      if (g.getAttribute("data-dn-init")) return;
+      g.setAttribute("data-dn-init", "1");
+      g.style.opacity = "0";
+      g.style.transform = "translateY(18px)";
+      g.style.transition = "opacity 700ms cubic-bezier(.16,1,.3,1), transform 700ms cubic-bezier(.16,1,.3,1)";
+    });
+
+    const r = section.getBoundingClientRect();
+    const span = section.offsetHeight - vh;
+    const p = Math.min(Math.max(-r.top / (span || 1), 0), 1);
+    const total = dnodes.length;
+    dnodes.forEach(function (g, i) {
+      const on = p > i / (total + 0.6);
+      g.style.opacity = on ? "1" : "0";
+      g.style.transform = on ? "translateY(0)" : "translateY(18px)";
+    });
+    dlines.forEach(function (pl, i) {
+      const len = parseFloat(pl.getAttribute("data-len")) || 200;
+      const seg = Math.min(Math.max((p - (i + 0.4) / (total + 0.6)) * (total + 0.6), 0), 1);
+      pl.style.strokeDashoffset = len * (1 - seg);
+      pl.setAttribute("stroke", seg > 0.98 ? accent : "rgba(236,230,218,0.35)");
+    });
+  }
+
+  setupQuotes() {
+    const wrap = document.querySelector("[data-quotes]");
+    if (!wrap) return;
+    const quotes = Array.from(wrap.querySelectorAll("[data-quote]"));
+    const dots = this.q("[data-quote-dot]");
+    const accent = this.props.accent || "#ccf24d";
+    let i = 0;
+    const show = function (n) {
+      i = (n + quotes.length) % quotes.length;
+      quotes.forEach(function (fig, k) {
+        const on = k === i;
+        fig.style.transition = "opacity 900ms cubic-bezier(.16,1,.3,1), transform 900ms cubic-bezier(.16,1,.3,1)";
+        fig.style.opacity = on ? "1" : "0";
+        fig.style.transform = on ? "translateY(0)" : "translateY(26px)";
+        fig.style.pointerEvents = on ? "auto" : "none";
+      });
+      dots.forEach(function (d, k) { d.style.background = k === i ? accent : "rgba(236,230,218,0.25)"; });
+    };
+    dots.forEach(function (d, k) { d.addEventListener("click", function () { show(k); }); });
+    show(0);
+    this.quoteTimer = setInterval(function () { show(i + 1); }, 6200);
+  }
+
+  setupPointer() {
+    const cur = document.querySelector("[data-cursor]");
+    const label = document.querySelector("[data-cursor-label]");
+    const fine = window.matchMedia("(pointer: fine)").matches;
+    this.pointer = { x: -999, y: -999, hx: 0.5, hy: 0.5 };
+    if (!fine) { if (cur) cur.style.display = "none"; }
+    const magnets = this.q("[data-magnetic]");
+    const self = this;
+    let cx = -999, cy = -999;
+
+    this.onPointer = function (e) {
+      self.pointer.x = e.clientX;
+      self.pointer.y = e.clientY;
+      const hero = document.querySelector("#top");
+      if (hero) {
+        const r = hero.getBoundingClientRect();
+        self.pointer.hx = (e.clientX - r.left) / r.width;
+        self.pointer.hy = (e.clientY - r.top) / r.height;
+      }
+      if (cur && fine) {
+        cur.style.opacity = "1";
+        const target = e.target.closest ? e.target.closest("[data-cursor-label], [data-magnetic]") : null;
+        const text = target && target.getAttribute("data-cursor-label");
+        const isLink = target && target.hasAttribute("data-magnetic");
+        cur.style.width = text ? "84px" : isLink ? "56px" : "34px";
+        cur.style.height = text ? "84px" : isLink ? "56px" : "34px";
+        cur.style.margin = text ? "-42px 0 0 -42px" : isLink ? "-28px 0 0 -28px" : "-17px 0 0 -17px";
+        cur.style.background = text ? (self.props.accent || "#ccf24d") : "transparent";
+        if (label) { label.textContent = text || ""; label.style.opacity = text ? "1" : "0"; }
+      }
+      if (!self.reduce) {
+        magnets.forEach(function (el) {
+          const r = el.getBoundingClientRect();
+          const dx = e.clientX - (r.left + r.width / 2);
+          const dy = e.clientY - (r.top + r.height / 2);
+          const d = Math.hypot(dx, dy);
+          if (d < 130) {
+            el.style.transition = "transform 320ms cubic-bezier(.16,1,.3,1)";
+            el.style.transform = "translate(" + dx * 0.22 + "px," + dy * 0.22 + "px)";
+          } else if (el.style.transform) {
+            el.style.transform = "translate(0,0)";
+          }
+        });
+      }
+    };
+    window.addEventListener("pointermove", this.onPointer, { passive: true });
+
+    if (cur && fine) {
+      const follow = function () {
+        cx += (self.pointer.x - cx) * 0.18;
+        cy += (self.pointer.y - cy) * 0.18;
+        cur.style.transform = "translate3d(" + cx + "px," + cy + "px,0)";
+        requestAnimationFrame(follow);
+      };
+      requestAnimationFrame(follow);
+    }
+  }
+
+  setupHeroField() {
+    const canvas = document.querySelector("[data-hero-canvas]");
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    const self = this;
+    const pts = [];
+    const N = 64;
+    let w = 0, h = 0, dpr = 1;
+
+    const resize = function () {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = canvas.clientWidth; h = canvas.clientHeight;
+      canvas.width = Math.max(w * dpr, 1);
+      canvas.height = Math.max(h * dpr, 1);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+    resize();
+    for (let i = 0; i < N; i++) {
+      pts.push({ x: Math.random(), y: Math.random(), vx: (Math.random() - 0.5) * 0.00035, vy: (Math.random() - 0.5) * 0.00035, r: 0.8 + Math.random() * 1.6 });
+    }
+
+    const accent = function () { return self.props.accent || "#ccf24d"; };
+    const hexToRgb = function (hex) {
+      const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex || "");
+      return m ? [parseInt(m[1], 16), parseInt(m[2], 16), parseInt(m[3], 16)] : [204, 242, 77];
+    };
+
+    let visible = true;
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }, { threshold: 0.02 }).observe(canvas);
+    }
+
+    const draw = function () {
+      self.fieldRaf = requestAnimationFrame(draw);
+      if (!visible || w === 0) return;
+      ctx.clearRect(0, 0, w, h);
+      const rgb = hexToRgb(accent());
+      const px = self.pointer.hx, py = self.pointer.hy;
+      const still = self.reduce;
+
+      for (let i = 0; i < pts.length; i++) {
+        const p = pts[i];
+        if (!still) {
+          p.x += p.vx; p.y += p.vy;
+          if (p.x < 0 || p.x > 1) p.vx *= -1;
+          if (p.y < 0 || p.y > 1) p.vy *= -1;
+          const dx = px - p.x, dy = py - p.y;
+          const d = Math.hypot(dx, dy);
+          if (d < 0.22 && d > 0.001) { p.x -= dx * 0.006; p.y -= dy * 0.006; }
+        }
+      }
+      for (let i = 0; i < pts.length; i++) {
+        for (let j = i + 1; j < pts.length; j++) {
+          const a = pts[i], b = pts[j];
+          const dx = (a.x - b.x) * w, dy = (a.y - b.y) * h;
+          const d = Math.hypot(dx, dy);
+          if (d < 170) {
+            const t = 1 - d / 170;
+            ctx.strokeStyle = "rgba(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + "," + (t * 0.16).toFixed(3) + ")";
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(a.x * w, a.y * h);
+            ctx.lineTo(b.x * w, b.y * h);
+            ctx.stroke();
+          }
+        }
+      }
+      for (let i = 0; i < pts.length; i++) {
+        const p = pts[i];
+        const dm = Math.hypot(px - p.x, py - p.y);
+        const glow = dm < 0.2 ? 1 : 0.42;
+        ctx.fillStyle = "rgba(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + "," + (0.28 * glow + 0.12).toFixed(3) + ")";
+        ctx.beginPath();
+        ctx.arc(p.x * w, p.y * h, p.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    };
+    draw();
+    this.onResize = resize;
+    window.addEventListener("resize", this.onResize);
+  }
+
+  setupScroll() {
+    const pin = document.querySelector("[data-pin]");
+    const track = document.querySelector("[data-pin-track]");
+    const bar = document.querySelector("[data-pin-progress]");
+    const idx = document.querySelector("[data-pin-index]");
+    const nav = document.querySelector("[data-nav]");
+    const stepIdx = document.querySelector("[data-step-index]");
+    const arrow = document.querySelector("[data-scroll-arrow]");
+    const self = this;
+
+    const paint = function () {
+      const reduce = self.reduce;
+      const cases = self.q("[data-case]");
+      const steps = self.q("[data-step]");
+      const parallax = self.q("[data-parallax]");
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const y = self.scrollY();
+
+      if (!reduce) {
+        cases.forEach(function (el) {
+          const m = el.querySelector("[data-case-metric]");
+          if (!m || m.style.transition !== "") return;
+          m.style.opacity = "0";
+          m.style.transform = "translateY(22px)";
+          m.style.transition = "opacity 820ms cubic-bezier(.16,1,.3,1), transform 820ms cubic-bezier(.16,1,.3,1)";
+        });
+        steps.forEach(function (el, i) {
+          if (el.style.transition !== "") return;
+          el.style.opacity = i === 0 ? "1" : "0.38";
+          el.style.transition = "opacity 600ms ease";
+        });
+      }
+
+      if (nav) {
+        const past = y > 60;
+        nav.style.transition = "background 420ms ease, border-color 420ms ease";
+        nav.style.background = past ? "rgba(11,17,32,0.8)" : "transparent";
+        nav.style.backdropFilter = past ? "blur(16px)" : "none";
+        nav.style.borderBottomColor = past ? "rgba(236,230,218,0.1)" : "transparent";
+      }
+      if (arrow) arrow.style.opacity = y > 200 ? "0" : "1";
+
+      self.q("[data-reveal], [data-split]").forEach(function (el) {
+        if (el.getAttribute("data-rv-done") === "1") return;
+        if (el.hasAttribute("data-reveal") && el.style.transition === "" && !reduce) {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(" + (self.dist || 48) + "px)";
+          el.style.transition = "opacity " + (self.dur || 980) + "ms " + self.ease + ", transform " + (self.dur || 980) + "ms " + self.ease;
+        }
+        if (el.hasAttribute("data-split") && !el.getAttribute("data-split-done")) { self.splitHeadings(); }
+        const r = el.getBoundingClientRect();
+        if (r.bottom <= 0 || r.right <= 0) { self.fireReveal(el, true); return; }
+        if (r.top < vh * 0.9 && r.left < vw * 0.98) self.fireReveal(el, reduce);
+      });
+      self.q("[data-scramble]").forEach(function (el) {
+        if (el.getAttribute("data-sc-done") === "1") return;
+        const r = el.getBoundingClientRect();
+        if (r.bottom <= 0) { self.fireScramble(el, true); return; }
+        if (r.top < vh * 0.85) self.fireScramble(el, reduce);
+      });
+      self.q("[data-mask]").forEach(function (el) {
+        if (el.getAttribute("data-mask-open") === "1") return;
+        const r = el.getBoundingClientRect();
+        const snap = reduce || r.bottom <= 0 || r.right <= 0;
+        if (snap || (r.top < vh * 0.88 && r.left < vw * 0.95)) {
+          if (snap) el.style.transition = "none";
+          el.style.clipPath = "inset(0% 0% 0% 0%)";
+          el.setAttribute("data-mask-open", "1");
+        }
+      });
+
+      parallax.forEach(function (el) {
+        const k = parseFloat(el.getAttribute("data-parallax")) || 0.1;
+        const r = el.getBoundingClientRect();
+        const mid = r.top + r.height / 2 - vh / 2;
+        el.style.transform = "translate3d(0," + (-mid * k) + "px,0)";
+      });
+
+      if (pin && track) {
+        const r = pin.getBoundingClientRect();
+        const span = pin.offsetHeight - vh;
+        const p = Math.min(Math.max(-r.top / (span || 1), 0), 1);
+        const shift = Math.max(track.scrollWidth - vw, 0);
+        track.style.transform = "translate3d(" + (-p * shift) + "px,0,0)";
+        if (bar) bar.style.transform = "scaleX(" + p + ")";
+        if (idx) idx.textContent = ("0" + Math.min(cases.length, Math.floor(p * cases.length) + 1)).slice(-2);
+        if (!reduce) {
+          cases.forEach(function (el) {
+            const m = el.querySelector("[data-case-metric]");
+            if (!m) return;
+            const cr = el.getBoundingClientRect();
+            const on = cr.left < vw * 0.55 && cr.right > vw * 0.3;
+            m.style.opacity = on ? "1" : "0";
+            m.style.transform = on ? "translateY(0)" : "translateY(22px)";
+          });
+        }
+      }
+
+      self.paintDiagram(vh);
+
+      if (steps.length) {
+        let active = 0;
+        steps.forEach(function (el, i) {
+          if (el.getBoundingClientRect().top < vh * 0.55) active = i;
+        });
+        if (!reduce) steps.forEach(function (el, i) { el.style.opacity = i === active ? "1" : "0.38"; });
+        if (stepIdx) stepIdx.textContent = ("0" + (active + 1)).slice(-2);
+      }
+
+    };
+
+    let last = -1;
+    let frames = 0;
+    const pump = function () {
+      frames++;
+      const y = self.scrollY();
+      if (y !== last || frames < 40 || frames % 20 === 0) { last = y; paint(); }
+    };
+    const loop = function () { self.loopRaf = requestAnimationFrame(loop); pump(); };
+    loop();
+    this.pumpTimer = setInterval(pump, 100);
+    this.onScroll = pump;
+    window.addEventListener("scroll", pump, { passive: true, capture: true });
+    document.addEventListener("scroll", pump, { passive: true, capture: true });
+    window.addEventListener("resize", pump);
+    paint();
+  }
+
+  renderVals() { return {}; }
+}
+
+</script>
+</body>
+</html>

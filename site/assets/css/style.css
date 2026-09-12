@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+html { background: #0b1120; }
+body { margin: 0; background: #0b1120; color: #ece6da; font-family: Geist, system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+a { color: #ece6da; text-decoration: none; }
+a:hover { color: #ccf24d; }
+[data-nav] nav a:hover { color: #ece6da; }
+[data-nav] nav a:last-child:hover { background: #ccf24d; color: #0b1120; }
+#pricing a:hover { background: #ccf24d; color: #0b1120; }
+::selection { background: #ccf24d; color: #0b1120; }
+
+@keyframes md-splash-letter { from { opacity: 0; transform: translateY(0.45em) rotate(4deg); } to { opacity: 1; transform: translateY(0) rotate(0deg); } }
+@keyframes md-pulse { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
+@keyframes md-marquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
+@keyframes md-dash { to { stroke-dashoffset: 0; } }
+@keyframes md-dot { 0%, 60%, 100% { transform: translateY(0); opacity: .4; } 30% { transform: translateY(-4px); opacity: 1; } }

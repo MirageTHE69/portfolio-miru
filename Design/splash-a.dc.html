@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: #0b1120; overflow: hidden; }
+  body { font-family: Geist, system-ui, sans-serif; color: #ece6da; -webkit-font-smoothing: antialiased; }
+  a { color: #ece6da; text-decoration: none; }
+  a:hover { color: #e8572a; }
+</style>
+</helmet>
+
+<div data-root="1" style="position:relative; width:100%; height:100vh; overflow:hidden; background:#0b1120; cursor:pointer;">
+
+  <div data-hero="1" style="position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding:clamp(24px,4vw,56px); will-change:transform;">
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 72% 18%, rgba(232,87,42,0.14), rgba(11,17,32,0) 58%);"></div>
+    <div style="position:relative; display:flex; flex-direction:column; gap:26px;">
+      <div style="display:flex; align-items:center; gap:12px; font-family:'Geist Mono', monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.5);">
+        <span data-accent-bg="1" style="width:6px; height:6px; border-radius:50%; background:#e8572a;"></span>
+        <span>AI automation &amp; web development</span>
+      </div>
+      <h1 style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-weight:400; font-size:clamp(40px,8vw,140px); line-height:0.92; letter-spacing:-0.035em;">Automation that pays for <em data-accent-fg="1" style="font-style:italic; color:#e8572a;">itself.</em></h1>
+      <div style="border-top:1px solid rgba(236,230,218,0.14); padding-top:20px; font-family:'Geist Mono', monospace; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(236,230,218,0.38);">Concept A &#183; panel split &amp; counter &#183; click to replay</div>
+    </div>
+  </div>
+
+  <div data-panel-top="1" style="position:absolute; left:0; right:0; top:0; height:50.2%; background:#0b1120; will-change:transform;"></div>
+  <div data-panel-bot="1" style="position:absolute; left:0; right:0; bottom:0; height:50.2%; background:#0b1120; will-change:transform;"></div>
+
+  <div data-overlay="1" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:clamp(24px,4vw,56px);">
+    <div style="position:absolute; top:clamp(24px,4vw,56px); left:clamp(24px,4vw,56px); right:clamp(24px,4vw,56px); display:flex; justify-content:space-between; gap:20px; font-family:'Geist Mono', monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.4);">
+      <span data-fade="1">MirageDevo</span>
+      <span data-fade="1">Est. 2024 &#183; IST</span>
+    </div>
+
+    <div data-word="1" style="display:flex; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(38px,7.5vw,120px); line-height:1; letter-spacing:-0.025em;">
+      <span data-clipwrap="1" style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-char="1" style="display:inline-block;">M</span></span>
+      <span data-clipwrap="1" style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-char="1" style="display:inline-block;">i</span></span>
+      <span data-clipwrap="1" style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-char="1" style="display:inline-block;">r</span></span>
+      <span data-clipwrap="1" style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-char="1" style="display:inline-block;">a</span></span>
+      <span data-clipwrap="1" style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-char="1" style="display:inline-block;">g</span></span>
+      <span data-clipwrap="1" style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-char="1" style="display:inline-block;">e</span></span>
+      <span data-clipwrap="1" style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-char="1" data-accent-fg="1" style="display:inline-block; color:#e8572a;">D</span></span>
+      <span data-clipwrap="1" style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-char="1" data-accent-fg="1" style="display:inline-block; color:#e8572a;">e</span></span>
+      <span data-clipwrap="1" style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-char="1" data-accent-fg="1" style="display:inline-block; color:#e8572a;">v</span></span>
+      <span data-clipwrap="1" style="display:inline-block; overflow:hidden; padding-bottom:0.08em;"><span data-char="1" data-accent-fg="1" style="display:inline-block; color:#e8572a;">o</span></span>
+    </div>
+
+    <div style="position:absolute; bottom:clamp(24px,4vw,56px); left:clamp(24px,4vw,56px); display:flex; align-items:flex-end; gap:14px;">
+      <span data-counter="1" style="font-family:'Instrument Serif', Georgia, serif; font-size:clamp(56px,11vw,180px); line-height:0.86; letter-spacing:-0.04em; color:rgba(236,230,218,0.92);">000</span>
+      <span data-fade="1" style="font-family:'Geist Mono', monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(236,230,218,0.4); padding-bottom:0.9em;">Loading</span>
+    </div>
+
+    <div style="position:absolute; bottom:clamp(24px,4vw,56px); right:clamp(24px,4vw,56px); width:min(240px,34vw); height:1px; background:rgba(236,230,218,0.16); overflow:hidden;">
+      <div data-bar="1" data-accent-bg="1" style="position:absolute; inset:0; background:#e8572a; transform:scaleX(0); transform-origin:left center;"></div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#e8572a&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#e8572a&quot;,&quot;#ccf24d&quot;,&quot;#7ad1c8&quot;,&quot;#f2f0eb&quot;],&quot;section&quot;:&quot;Brand&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this.timers = [];
+    this.applyAccent();
+    const root = document.querySelector("[data-root]");
+    if (root) root.addEventListener("click", this.play.bind(this));
+    this.play();
+  }
+  componentDidUpdate() { this.applyAccent(); }
+  componentWillUnmount() { this.clear(); }
+
+  q(s) { return Array.from(document.querySelectorAll(s)); }
+  clear() { this.timers.forEach(clearTimeout); this.timers = []; if (this.raf) cancelAnimationFrame(this.raf); }
+  after(ms, fn) { this.timers.push(setTimeout(fn, ms)); }
+
+  applyAccent() {
+    const a = this.props.accent || "#e8572a";
+    this.q("[data-accent-fg]").forEach(function (el) { el.style.color = a; });
+    this.q("[data-accent-bg]").forEach(function (el) { el.style.background = a; });
+  }
+
+  play() {
+    this.clear();
+    const ease = "cubic-bezier(.16,1,.3,1)";
+    const heavy = "cubic-bezier(.76,0,.24,1)";
+    const chars = this.q("[data-char]");
+    const fades = this.q("[data-fade]");
+    const bar = document.querySelector("[data-bar]");
+    const counter = document.querySelector("[data-counter]");
+    const top = document.querySelector("[data-panel-top]");
+    const bot = document.querySelector("[data-panel-bot]");
+    const overlay = document.querySelector("[data-overlay]");
+    const hero = document.querySelector("[data-hero]");
+    const word = document.querySelector("[data-word]");
+
+    chars.forEach(function (c) { c.style.transition = "none"; c.style.transform = "translateY(110%)"; });
+    fades.forEach(function (f) { f.style.transition = "none"; f.style.opacity = "0"; });
+    if (bar) { bar.style.transition = "none"; bar.style.transform = "scaleX(0)"; }
+    if (top) { top.style.transition = "none"; top.style.transform = "translateY(0)"; }
+    if (bot) { bot.style.transition = "none"; bot.style.transform = "translateY(0)"; }
+    if (overlay) { overlay.style.transition = "none"; overlay.style.opacity = "1"; }
+    if (word) { word.style.transition = "none"; word.style.transform = "translateY(0)"; }
+    if (hero) { hero.style.transition = "none"; hero.style.transform = "scale(1.07)"; hero.style.opacity = "0.55"; }
+    if (counter) counter.textContent = "000";
+
+    const self = this;
+    requestAnimationFrame(function () {
+      chars.forEach(function (c, i) {
+        c.style.transition = "transform 900ms " + ease;
+        c.style.transitionDelay = 80 + i * 55 + "ms";
+        c.style.transform = "translateY(0)";
+      });
+      fades.forEach(function (f, i) {
+        f.style.transition = "opacity 800ms ease";
+        f.style.transitionDelay = 300 + i * 120 + "ms";
+        f.style.opacity = "1";
+      });
+      if (bar) { bar.style.transition = "transform 1900ms " + ease; bar.style.transform = "scaleX(1)"; }
+
+      if (counter) {
+        const t0 = performance.now();
+        const tick = function (now) {
+          const p = Math.min((now - t0) / 1900, 1);
+          const v = Math.round(100 * (1 - Math.pow(1 - p, 2.2)));
+          counter.textContent = ("00" + v).slice(-3);
+          if (p < 1) self.raf = requestAnimationFrame(tick);
+        };
+        self.raf = requestAnimationFrame(tick);
+      }
+    });
+
+    this.after(2150, function () {
+      if (word) { word.style.transition = "transform 700ms " + heavy + ", opacity 700ms ease"; word.style.transform = "translateY(-40px)"; }
+      if (overlay) { overlay.style.transition = "opacity 620ms ease"; overlay.style.opacity = "0"; }
+    });
+
+    this.after(2450, function () {
+      if (top) { top.style.transition = "transform 1150ms " + heavy; top.style.transform = "translateY(-100%)"; }
+      if (bot) { bot.style.transition = "transform 1150ms " + heavy; bot.style.transform = "translateY(100%)"; }
+      if (hero) { hero.style.transition = "transform 1600ms " + ease + ", opacity 1200ms ease"; hero.style.transform = "scale(1)"; hero.style.opacity = "1"; }
+    });
+
+    this.after(6200, function () { self.play(); });
+  }
+
+  renderVals() { return {}; }
+}
+
+</script>
+</body>
+</html>
